@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>キョウリツ・デイサービス</title>
+<link href="dayservice.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('img/btn_annai_on.png','img/btn_itiniti_on.png','img/btn_syuhen_on.png','img/btn_ryokin_on.png','img/btn_dinner_on.png','img/btn_nagare_on.png','img/btn_home_on.png')">
+	<header>
+	<h1><a href="index.html"><img src="img/logo.jpg" width="250" height="100" alt=""/></a></h1>
+  <nav>
+    <ul>
+      <li><a href="index.html"><img src="img/btn_home_on.png" alt="" width="250" height="80" id="navbtn1" onMouseOver="MM_swapImage('navbtn1','','img/btn_home_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+      <li><a href="facility.html"><img src="img/btn_annai.png" alt="" width="250" height="80" id="navbtn2" onMouseOver="MM_swapImage('navbtn2','','img/btn_annai_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+      <li><a href="one-day.html"><img src="img/btn_itiniti.png" alt="" width="250" height="80" id="navbtn3" onMouseOver="MM_swapImage('navbtn3','','img/btn_itiniti_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+      <li><a href="map.html"><img src="img/btn_syuhen.png" alt="" width="250" height="80" id="navbtn4" onMouseOver="MM_swapImage('navbtn4','','img/btn_syuhen_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+      <li><a href="price.html"><img src="img/btn_ryokin.png" alt="" width="250" height="80" id="navbtn5" onMouseOver="MM_swapImage('navbtn5','','img/btn_ryokin_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+      <li><a href="meal.html"><img src="img/btn_dinner.png" alt="" width="250" height="80" id="navbtn6" onMouseOver="MM_swapImage('navbtn6','','img/btn_dinner_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+      <li><a href="flow.html"><img src="img/btn_nagare.png" alt="" width="250" height="80" id="navbtn7" onMouseOver="MM_swapImage('navbtn7','','img/btn_nagare_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+    </ul>
+  </nav>
+</header>
+<div class="content">
+  <section class="sidenav">
+    <ol class="clearfix">
+      <li><a href="summary.html">施設<br>
+        概要</a></li>
+      <li><a href="recruit.html">採用<br>
+        情報</a></li>
+      <li><a href="inquiry.html">お問い<br>
+        合わせ</a></li>
+      <li><a href="privacy.html">個人情報<br>
+        保護方針</a></li>
+    </ol>
+  </section>
+  <main class="top">
+	<!--<p class="text"></p>-->
+  	<section class="news">
+    	<h2>新着情報</h2>
+    	<ul>
+      	<li>年始のごあいさつ</li>
+      	<li>年末年始の施設情報</li>
+      	<li>クリスマス会を行いました！</li>
+      </ul>
+  	</section>
+		<section class="calender">
+			<p><img src="img/calender.png" width="230" height="220" alt=""/></p>
+		</section>
+		<section class="kengaku">
+		</section>
+  </main>
+  <footer>
+    <p><a href="index.html">ＨＯＭＥ</a> | <a href="facility.html">施設案内</a> | <a href="one-day.html">施設の一日 | </a><a href="map.html">施設周辺ＭＡP | </a><a href="price.html">ご利用料金 | </a><a href="meal.html">お食事</a> | <a href="flow.html">ご利用のながれ</a></p>
+    <p><a href="#">施設概要</a> | <a href="recruit.html">採用情報</a> <a href="#"> | </a><a href="inquiry.html">お問い合わせ</a><a href="recruit.html"> | </a><a href="privacy.html">個人情報保護方針</a></p>
+    <p>Copyright (c) 職業訓練課題. All Rights Reserved.</p>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+@charset "utf-8";
+.acco .ship p{
+  width:70%;
+  margin: 0 auto;
+}
+.acco .plan p{
+  width:70%;
+  margin: 0 auto;
+}
+.acco .boss p{
+  width:70%;
+  margin: 0 auto;
+}
+.acco h2{
+  width:70%;
+}
+.acco .textinner .photo{
+  width:100%;
+
+  display:block;
+}
+.photo img{
+  width:80%;
+  height:auto;
+  display:block;
+  margin:0 auto;
+  margin-bottom:8%;
+}

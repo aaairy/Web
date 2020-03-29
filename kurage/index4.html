@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>海月-職業訓練 レスポンシブ練習</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style4.css" rel="stylesheet" type="text/css">
+</head>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.rollover.js"></script>
+
+<script>
+$(function(){
+	// #nav-toggleをクリックしたときの設定
+	$("#nav-toggle").on("click",function(){
+	
+		// ナビゲーションメニューを開閉
+		$("nav ul").slideToggle();
+	
+		// #nav-toggleにクラス名[open]を追加・削除
+		$(this).toggleClass("open");
+	
+	});
+	// ボタン押下時にナビゲーションが閉じるように設定
+	$('#menu a[href]').on('click', function(event) {
+		// クリックイベントが発生したら実行
+        $('#nav-toggle').trigger('click');
+    });
+});	
+// pagetopボタン押下時処理
+$(function() {
+ 
+  $(window).on("scroll", function() {
+    if ($(this).scrollTop() > 100) {
+      $(".gotop").fadeIn("fast");
+    } else {
+      $(".gotop").fadeOut("fast");
+    }
+ 
+    scrollHeight = $(document).height();
+    scrollPosition = $(window).height() + $(window).scrollTop();
+    footHeight = $("footer").innerHeight();
+ 	if ( scrollHeight - scrollPosition  <= footHeight ) {
+            $(".gotop").css({
+                "position":"absolute",
+                "bottom": footHeight + 20
+            });
+        } else { //それ以外の場合は
+            $(".gotop").css({
+                "position":"fixed",
+                "bottom": "5px"
+            });
+        }
+  });
+ 
+});
+</script>
+<body id="top">
+<header>
+  <div class="inner">
+    <h1><a href="index.html"><img src="img/logo.png" width="126" height="166" alt=""/></a></h1>
+    <nav>
+		<div id="nav-toggle"><!--nav-toggleセレクタで設定している-->
+			<span></span><!--右上のメニューボタン1本目-->
+			<span></span><!--右上のメニューボタン2本目-->
+			<span></span><!--右上のメニューボタン3本目-->
+		</div>
+      <ul id="menu">
+        <li><a href="#top"><img src="img/btn-top.png" width="51" height="25" alt=""/></a></li>
+        <li><a href="#sec1"><img src="img/btn-jellyfish1.png" width="66" height="29" alt=""/></a></li>
+        <li><a href="#sec2"><img src="img/btn-jellyfish2.png" width="184" height="29" alt=""/></a></li>
+        <li><a href="#sec3"><img src="img/btn-jellyfish3.png" width="184" height="29" alt=""/></a></li>
+        <li><a href="#sec4"><img src="img/btn-jellyfish4.png" width="164" height="29" alt=""/></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <p class="mainimage"></p>
+  <p class="mainimage-s"><img src="img/mainimage-smp.jpg" alt=""/></p>
+  <div class="inner">
+    <section class="sec1" id="sec1">
+      <h2><img src="img/title-jellyfish1.png" alt="" width="156" height="50"/></h2>
+      <div class="box-area">
+        <div class="box">
+          <p><img src="img/photo-mizu.jpg" width="480" height="190" alt=""/></p>
+          <h3>ミズクラゲ</h3>
+          <p>世界中の海に分布しています。<br>
+          	 傘の直径は15～30cmで、別名をヨツメクラゲとも言います。</p>
+        </div>
+        <div class="box">
+          <p><img src="img/photo-tako.jpg" width="480" height="190" alt=""/></p>
+          <h3>タコクラゲ</h3>
+          <p>関東以南に分布しています。<br>
+          	 傘の直径は10～20cmで、傘に水玉模様があるのが特徴です。</p>
+        </div>
+        <div class="box">
+          <p><img src="img/photo-aka.jpg" width="480" height="190" alt=""/></p>
+          <h3>アカクラゲ</h3>
+          <p>北海道以南に生息している種類です。<br>
+          	 傘の直径は約20cmで、傘に放射状の赤い縞模様が入っているのが特徴です。</p>
+        </div>
+        <div class="box">
+          <p><img src="img/photo-oki.jpg" width="480" height="190" alt=""/></p>
+          <h3>オキクラゲ</h3>
+          <p>黒潮海流域二生息しています。<br>
+          	 傘の直径は5～7cmで、日本には黒潮に乗ってやってきます。</p>
+        </div>
+      </div>
+    </section>
+    <section class="sec2" id="sec2">
+	  <h2><img src="img/title-jellyfish2.png" alt="" width="274" height="50"/></h2>
+      <div class="box-area">
+        <div class="box">
+          <p class="youtube">
+			   <iframe width="560" height="315" src="https://www.youtube.com/embed/nOR50C7Jt5Y" frameborder="0" wmode="Opaque" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  </p>
+          <h3>くらげ万華鏡トンネル</h3>
+          <p>全長50メートルのスロープに、色鮮やかな照明に照らされた8つのクラゲ水槽を設置し、壁と天井の3面に約5,000枚の四角形や三角形の鏡を敷き	 詰めることで、まるでクラゲと一緒に鏡の中の世界を漂っているような浮遊体験ができる。<br>
+          	 すみだ水族館　
+			  <a href="http://www.sumida-aquarium.com/" target="_blank">http://www.sumida-aquarium.com/</a>
+		  </p>
+        </div>
+        <div class="box">
+          <p class="youtube">
+			  <iframe width="560" height="315" src="https://www.youtube.com/embed/Umnk3rDYJ0E" frameborder="0" wmode="Opaque" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  </p>
+          <h3>くらげライフ</h3>
+          <p>約10種類のクラゲの展示により、クラゲの魅力あふれる生態や多様性を紹介すると共に、最新のデジタル映像技術でクラゲの不思議な生活史を再	  現するコーナーを開設し、より楽しく、わかりやすく学ぶことができる参加体験型の展示施設。<br>
+             鴨川シーワールド　
+			  <a href="http://www.kamogawa-seaworld.jp/" target="_blank">http://www.kamogawa-seaworld.jp/</a>
+		  </p>
+        </div>
+      </div>
+      <section class="sec3" id="sec3">
+        <h2><img src="img/title-jellyfish3.png" alt="" width="274" height="50"/></h2>
+        <p class="photo"><img src="img/photo-shiiku.jpg" width="480" height="190" alt=""/></p>
+        <p>クラゲは魚のように泳ぐ能力があまりなく、潮の流れに乗って移動しています。そのため流れのない水槽に入れてしまうと傘の開閉で動ける範囲に	限られて底の方から動けなくなってしまいます。そこで丸い形をしたクラゲ専用の水槽が販売されるようになり、ろ過装置の水流によって自然な流	れを実現しました。ただし、専用水槽はかなり高額なためこれからクラゲ飼育を始める方にとっては少しハードルが高いでしょう。</p>
+        <p>そういった際には水槽の奥行きとマッチする薄いアクリル板を円を描くように曲げて水槽に設置してみましょう。<br>
+          外部フィルターが作る水流をうまく利用すればクラゲに最適な水流を作ることができますし、アクリル板の外側にヒーターやフィルターの吸い込みがくるようにするとクラゲが傷つく心配はありません。<br>
+          餌に関しては行き餌を好む傾向にあるためブラインシュリンプを沸かしてスポイトでクラゲの傘に吹きかけてあげるように与えます。<br>
+          クラゲは水質悪化にも極端に敏感なため最低でも3日に一度は3分の1ほどの水量を換水するようにしてください。</p>
+      </section>
+    </section>
+    <section class="sec4" id="sec4">
+      <h2><img src="img/title-jellyfish4.png" alt="" width="254" height="50"/></h2>
+      <table width="700px">
+        <tbody>
+          <tr>
+            <th scope="row">エチゼンクラゲ</th>
+            <td>傘が2メートルにもなく大型で、名前の由来になっている「越前」の福井県だけではなく、日本海沿岸全域で収穫されます。</td>
+          </tr>
+          <tr>
+            <th scope="row">ビゼンクラゲ</th>
+            <td>傘が50センチ～1メートルほどで、やはりその名の通り「備前」岡山県が名産地です。<br>
+            エチゼンクラゲよりも品質が高いと評価されています。</td>
+          </tr>
+          <tr>
+            <th scope="row">ミズクラゲ</th>
+            <td>弱い毒性があり食べてはいけません。</td>
+          </tr>
+          <tr>
+            <th scope="row">タコクラゲ</th>
+            <td>弱い毒性があり食べてはいけません。</td>
+          </tr>
+          <tr>
+            <th scope="row">アカクラゲ</th>
+            <td>強い毒性があり食べてはいけません。触る事も危険です。</td>
+          </tr>
+          <tr>
+            <th scope="row">オキクラゲ</th>
+            <td>強い毒性があり食べてはいけません。触る事も危険です。</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>主に、上記２種類（エチゼンクラゲ・ビゼンクラゲ）が代表的な食用クラゲです。<br>
+      乾燥させた食材が、一般に中華風和えものなどに使われています。</p>
+    </section>
+  </div>
+</main>
+<footer>
+	<p class="gotop" id="topbtn"><a href="#top"><img src="img/btn-gotop.png" width="90" height="105" alt=""/></a></p>
+  	<div class="inner">
+    	<ul class="link">
+      		<li class="title">海月～くらげ～</li>
+			<span class="break">
+      			<li><a href="#top">TOP</a></li>
+      			<li><a href="#sec1">くらげ</a></li>
+      			<li><a href="#sec2">くらげを見に行こう</a></li>
+      			<li><a href="#sec3">くらげを飼育しよう</a></li>
+      			<li><a href="#sec4"> くらげを食べよう</a></li>
+			</span>
+    	</ul>
+    <p>
+    Copyright &copy; 職業訓練Lesson All Rights Reserved. </p>
+  	</div>
+</footer>
+</body>
+</html>

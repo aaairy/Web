@@ -1,0 +1,225 @@
+@charset "utf-8";
+p, h1, h2, h3, h4, ol, ul, body {
+	padding: 0px;
+	margin: 0px;
+}
+#all {
+	font-size: 100%;
+	line-height: 1.5;
+}
+.clearfix:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+
+img {
+	border: none;
+	vertical-align: bottom;
+}
+header {
+	background-color: #bdb08f;
+}
+header .inner {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+nav {
+	background-color: #ecdf2b;
+	margin: 0px;
+	padding: 0px;
+	height: 50px;
+}
+nav ul {
+	padding: 3px 0;
+	overflow: hidden;
+	list-style-type: none;
+	margin-top: 0;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0;
+	width: 1000px;
+	font-size: 0px;
+	text-align: center;
+}
+nav li {
+	margin-right: 1px;
+	float: left;
+	display: inline;
+	justify-content: center;
+}
+nav li.last {
+	margin-right: 0px;
+}
+main {
+	display: block;
+	margin: 0 auto;
+	width: 1000px;
+	padding-top: 20px;
+}
+h2  {
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+.kurashi .box1 {
+	background-color: #ffdff0;
+	text-align: center;
+	margin-top: 0;
+	margin-right: 20px;
+	margin-left: 0;
+	width: 320px;
+	float: left;
+	background-image: url(url);
+	margin-bottom: 40px;
+}
+.kurashi .box2 {
+	background-color: #ffdff0;
+	text-align: center;
+	margin-top: 0;
+	margin-right: 20px;
+	margin-left: 0;
+	margin-bottom: 40px;
+	width: 320px;
+	float: left;
+}
+.kurashi .box3 {
+	background-color: #ffdff0;
+	text-align: center;
+	margin-top: 0;
+	margin-left: 0;
+	margin-bottom: 40px;
+	width: 320px;
+	float: left;
+}
+.kurashi .box1 h3 {
+	background-image: url(img/nakami-head1.jpg);
+	background-repeat: no-repeat;
+	text-align: center;
+	padding-top: 70px;
+	padding-right: 15px;
+	padding-left: 15px;
+	height: 50px;
+	/* [disabled]padding-bottom: 0px; */
+	color: #dd1a82;
+	background-color: #ffdff0;
+}
+.kurashi .box2 h3 {
+	background-image: url(img/nakami-head2.jpg);
+	background-repeat: no-repeat;
+	text-align: center;
+	padding-top: 70px;
+	padding-right: 15px;
+	padding-left: 15px;
+	height: 50px;
+	/* [disabled]padding-bottom: 0px; */
+	color: #dd1a82;
+	background-color: #ffdff0;
+}
+.kurashi .box3 h3 {
+	background-image: url(img/nakami-head3.jpg);
+	background-repeat: no-repeat;
+	text-align: center;
+	padding-top: 70px;
+	padding-right: 15px;
+	padding-left: 15px;
+	height: 50px;
+	/* [disabled]padding-bottom: 0px; */
+	color: #dd1a82;
+	background-color: #ffdff0;
+}
+.kurashi p {
+	margin: 30px 10px;
+	text-align: left;
+}
+.kurashi img {
+	margin-top: -30px;
+}
+
+.kaiteki h2 {
+	margin-top: 40px;
+}
+.kaiteki .inner {
+	padding: 30px;
+	background-color: #ecdf2b;
+	overflow: hidden;
+}
+.kaiteki .inner img {
+	padding: 8px 20px 30px 0;
+}
+.kaiteki .inner img:nth-of-type(4n) {
+	padding-right: 0px;
+
+}
+.kaiteki .inner p {
+	text-align: center;
+}
+.infomation .inner {
+	background-color: #f2e4c0;
+	text-shadow: 0px 0px;
+	-webkit-box-shadow: 10px 10px #cdcdcd;
+	box-shadow: 10px 10px #cdcdcd;
+	position: relative;
+	overflow: hidden;
+}
+.infomation .inner .photo {
+	float: right;
+}
+.infomation .inner .text {
+	margin-top: 36px;
+	margin-left: 35px;
+	float: left;
+	font-size: 0.9em;
+}
+.access {
+	margin: 0 auto;
+	/* [disabled]width: 100%; */
+	overflow-x: hidden;
+}
+.access p {
+	margin: 0 auto;
+	width: 1000px;
+	text-align: center;
+}
+
+.access .text {
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+.pagetop {
+	background-color: #de1e84;
+	background-image: url(img/pagetop.jpg);
+	background-repeat: repeat-x;
+	height: 45px;
+	width: 100%;
+}
+.pagetop-n {
+	overflow: hidden;
+	background-image: url(img/bg-pagetop.jpg);
+	background-repeat: repeat-x;
+	margin: 0 auto;
+	padding: 0 auto;
+	text-align: right;
+	width: 100% !important;
+
+}
+
+
+
+footer {
+	background-color: #bdb08f;
+	text-align: center;
+	padding-top: 30px;
+}
+footer p {
+	padding-bottom: 261px;
+}
+footer a {
+	text-decoration: none;
+	color: #512829;
+}
+footer a:hover {
+	text-decoration: underline;
+	color: #EA429A;
+}

@@ -1,0 +1,751 @@
+@charset "utf-8";
+/* リセットセレクタ */
+/*ここから============================================== */
+p, h1, h2, h3, ul, dt, dd, body {
+  padding: 0px;
+  margin: 0px;
+}
+img {
+  border: none;
+  vertical-align: bottom;
+}
+.clearfix {
+    content: "";
+    clear: both;
+    display: block;
+}
+/*===============================================ここまで*/
+
+/*ここから============================================== */
+/* 共通CSS */
+/* ページ全体に対する基本設定 */
+#all {
+  width: 100%;
+  position:relative;
+  /*height: auto !important;*/
+  height:100%;
+  min-height:100%;
+  border: none;
+}
+
+/* ヘッダーの枠組み
+  * header [clearfix]
+  * ┗ h1search_inner , clearfix
+  *   ┗.inner
+  *   ┗.search
+  * ┗ .nav
+  *   ┗ nav [clearfix]
+  *     ┗#nav-toggle
+  *     ┗.navinner
+*/
+/*======================================= */
+header {
+  display: block !important;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding-top: 2%;
+}
+header .inner {
+  margin: 0 auto;
+  width: 80%;
+}
+.h1search_inner{
+  position:relative;
+  width:100%;
+  height:auto;
+  margin-left: 0px;
+}
+h1{
+  float:left;
+}
+h1  img {
+  vertical-align: top;
+  display:block;
+  max-width: 100%;
+  height:auto;
+}
+.search {
+  display: block;
+  float: left;
+  position: absolute;
+  left: 65%;
+}
+/*検索バーのCSS*/
+/*======================================= */
+/*フォーム全体*/
+#form{
+  position: relative;/*フォームの相対位置*/
+  max-width: 270px;/*フォームのサイズ*/
+  margin-bottom: 15px;    /*display:flex;
+    justify-content: flex-end;*/
+  margin-top: 3vh;
+}
+/*検索ボックス*/
+#form .fs{
+  position: absolute;/*フォームの絶対位置*/
+  left: 0;
+  top: 0;
+  outline: 0;/*クリック時の青い枠線消す*/
+  height: 50px;/*検索ボックスの高さ*/
+  padding: 0 10px;/*テキスト位置調整*/
+  border-radius: 2px 0 0 2px;/*検索ボックスの角を丸める*/
+  background: #eee;
+}
+/*検索ボタン*/
+#form .fsu{
+    width: 70px;/*検索ボタンの横幅*/
+    height: 50px;/*検索ボタンの縦幅*/
+    position: absolute;/*検索ボタンの絶対位置*/
+    left: 200px;/*検索ボタンの位置調整*/
+    top: 0;
+    border-radius: 0 2px 2px 0;/*検索ボタンの角を丸める*/
+    background: #7fbfff;/*検索ボタンの背景カラー*/
+    border: none;/*検索ボタンの枠線を消す*/
+    color: #fff;/*検索ボタンのテキストカラー*/
+    font-weight: bold;/*検索ボタンのテキスト太字*/
+    font-size: 16px;/*検索ボタンのフォントサイズ*/
+    margin-top: 2px;
+}
+/*検索ボタンマウスオーバー時*/
+#form .fsu:hover{
+color:#666;/*検索ボタンマウスオーバー時のフォントカラー*/ 
+}
+
+/*======================================= */
+nav{
+  background-image: url("img/nav_bg_res.jpg");
+  background-repeat: repeat;
+  padding-top: 1.8%;
+  padding-bottom: 1.8%;
+  overflow:hidden;
+}
+nav ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  overflow:hidden;
+}
+nav li a {
+  background-color: rgba(255,255,255,0.3);
+  display:block;
+  -webkit-box-shadow: 0px 0px 8px gray;
+  box-shadow: 0px 0px 8px gray;
+  margin-top:1.5%;
+  margin-bottom:1.5%;
+}
+nav li a:hover {
+  background-color: rgba(255,255,255,0.5);
+  -webkit-box-shadow: 0px 0px 3px #2f2f2f;
+  box-shadow: 0px 0px 3px #2f2f2f;
+}
+#nav-toggle{
+  visibility: hidden;
+}
+/*===============================================ここまで*/
+
+
+/*  */
+/* メイン部分 */
+/*ここから============================================== */
+main {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+  width: 80%;
+  background-color: #f2f2f2;
+  padding-bottom: 3%;
+  padding-top: 2%;
+}
+/* index.htmlのみに表示するカルーセルCSS */
+/* ここから */
+main .carouselInner {
+  margin-bottom: 5%;
+  position:relative;
+}
+main .your-class  {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+main .your-class img {
+  height: auto;
+  max-width: 100%;
+  overflow:hidden;
+}
+.item {
+  width: 1000px;
+  margin: 0 5px;
+}
+/* 共通コンテンツCSS */
+h2:before{
+  content: url(img/tama.png);
+}
+h2 {
+    border-radius: 20px;
+    background-color: #DAE8EB;
+    padding-left: 3%;
+    padding-right:3%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.acco .caution{
+  text-align: right;
+  padding-bottom:3%;
+}
+.caution::before {
+  content: "\f12a";
+  font-family: "Font Awesome 5 free";
+  font-weight: 900;
+}
+.acco .click {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    width: 70%;
+    margin-top: 10px;
+    text-indent: 2%;
+}
+.click .textinner .underline  {
+  text-decoration: underline;
+  color: #121212;
+  cursor: pointer;
+}
+.acco .clickover {
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    width: 70%;
+}
+.acco .clickover img {
+    width: 98%;
+}
+main .acco img  {
+    padding-top: 8px;
+    vertical-align: text-top;
+}
+
+/* TwitterのCSS */
+.twitter-timeline {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: 15%;
+}
+.acco .twitter {
+    width: auto;
+}
+/*===============================================ここまで*/
+
+/* フッター共通CSS*/
+/*ここから============================================== */
+footer{
+  background-image: url(img/nav_bg_res.jpg);
+  height:200px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left:15%;
+  padding-right:15%;
+}
+footer ul{
+  display:flex;
+  justify-content: center;
+  list-style-type: none;
+  text-align:center;
+}
+footer ul li{
+  border-right:3px solid #000;
+  padding-right:1%;
+  padding-left:1%;
+  display:block;
+}
+footer ul li:last-child{
+  border-right:none;
+}
+footer li a {
+  text-decoration: none;
+  color: #2f2f2f;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 2.5%;
+  display: inline-block;
+  background-color: rgba(255,255,255,0.5);
+  -webkit-box-shadow: 0px 0px 5px gray;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px gray;
+  padding-top: 2.5%;
+}
+footer li a:hover {
+  color: #7c0606;
+  background-color: rgba(255,255,255,0.8);
+  -webkit-box-shadow: 0px 0px 5px #2f2f2f;
+  box-shadow: 0px 0px 5px #2f2f2f;
+}
+/*===============================================ここまで*/
+
+/* スクロールTopボタンCSS */
+/*ここから============================================== */
+.scrollTop {
+    position: fixed;
+    right: 20px;
+    bottom: 75px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+    z-index:150;
+}
+.scrollTop a {
+    font-size: 18px;
+    color: #fff;
+    background: #1856C9;
+    padding: 20px;
+    text-decoration: none;    
+    z-index:155;
+}
+.scrollTop a:hover{
+    background: #44CAFF;
+    z-index:160;
+}
+/*===============================================ここまで*/
+
+
+/*============================================ */
+/* .slideShow-slickのCSS
+------------------------- */
+.slideShow {
+    margin: 0 auto;
+    text-align: left;
+    display: none;
+}
+ 
+/* .mainView
+------------------------- */
+.slideShow .mainSlide {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.slideShow .mainSlide ul {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.slideShow .mainSlide ul li {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+}
+.slideShow .mainSlide ul li img {
+    width: 100%;
+}
+ 
+/* .thumbNail
+------------------------- */
+.slideShow .thumbNail {
+    width: 100%;
+    overflow: hidden;
+}
+ 
+.slideShow .thumbNail ul {
+    width: 110%;
+}
+.slideShow .thumbNail ul li {
+    float: left;
+    display: inline;
+    overflow: hidden;
+    cursor: pointer;
+}
+ 
+.slideShow .thumbNail ul li img {
+    width: 100%;
+}
+ 
+.slideShow .thumbNail ul li.active {
+    filter: alpha(opacity=100)!important;
+    -moz-opacity: 1!important;
+    opacity: 1!important;
+}
+ 
+/* sideNavi
+------------------------- */
+.slideShow .mainSlide .btnPrev,
+.slideShow .mainSlide .btnNext {
+    top: 0;
+    width: 5%;
+    height: 100%;
+    position: absolute;
+    z-index: 80;
+}
+.slideShow .mainSlide .btnPrev {
+    left: 0;
+    background: #ccc url(../img/btnPrev.png) no-repeat center center;
+}
+.slideShow .mainSlide .btnNext {
+    right: 0;
+    background: #ccc url(../img/btnNext.png) no-repeat center center;
+}
+ 
+ 
+/* =======================================
+    ClearFixElements
+======================================= */
+.slideShow ul:after {
+    content: ".";
+    height: 0;
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+ 
+.slideShow ul {
+    display: inline-block;
+    overflow: hidden;
+}
+/*============================================ */
+/*===============================================ここまで*/
+
+
+/* iPad表示のCSS設定 */
+/*ここから============================================== */
+/* 画面の横幅が768px以上のとき */
+@media screen and (min-width:768px){
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .inner {
+    padding: 0 10px;
+    width: auto;
+  }
+  nav{
+    padding-left:10%;
+    padding-right:10%;
+  }
+  nav ul li{
+    box-sizing: border-box;
+  }
+}
+/* 画面の横幅が768px以下のとき */
+@media screen and (max-width:768px){
+/* ヘッダーCSS */
+  header h1 {
+    display:flex;
+    margin-top: 4%;
+    margin-bottom: 0;
+  }
+  header h1 img{
+    max-width:100%;
+    margin-left: 0px;
+  }
+  .search{
+    overflow:hidden;
+    float:none;
+    position:static;
+  }
+  .search #form{
+    width:100%;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:12%;
+    margin-bottom:5%;
+    min-height:50px;
+    overflow:hidden;
+    z-index:110;
+    clear:both;
+    display:block;
+  }
+  #formtext .fs{
+    z-index:101;
+  }
+  #formsubmit .fsu{
+    z-index:102;
+  }
+/* ナビゲーションCSS */
+  nav{
+    background-image: url("img/nav_bg_res.jpg");
+    background-repeat: repeat;
+    padding-top: 1.8%;
+    padding-bottom: 1.8%;
+    overflow:hidden;
+  }
+  nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    overflow:hidden;
+  }
+  nav li a {
+    background-color: rgba(255,255,255,0.3);
+    display:block;
+    -webkit-box-shadow: 0px 0px 8px gray;
+    box-shadow: 0px 0px 8px gray;
+    margin-top:1.5%;
+    margin-bottom:1.5%;
+  }
+  nav li a:hover {
+    background-color: rgba(255,255,255,0.5);
+    -webkit-box-shadow: 0px 0px 3px #2f2f2f;
+    box-shadow: 0px 0px 3px #2f2f2f;
+  }
+  #nav-toggle{
+    visibility: hidden;
+  }
+/* メインCSS */
+  main {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  main h2 {
+	width:90%;
+  margin: 0 auto;
+  }
+  .sns{
+    margin-bottom: 3%;
+  }
+/* フッターCSS */
+  footer{
+    width:100%;
+    position:relative;
+    margin: 0 auto;
+    padding-left:0px;
+    padding-right:0px;
+  }
+  footer ul{
+    display:block;
+  }
+  footer ul li{
+    text-align: center;
+    font-size: 1.25em;
+    border:none;
+  }
+  
+  footer ul li a{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-bottom: 1%;
+  }
+}
+/*===============================================ここまで*/
+
+/* スマートフォン表示のCSS設定 */
+/*ここから============================================== */
+/* 画面の横幅が640px以下のとき */
+@media screen and (max-width:640px){
+/* ヘッダーCSS */
+  header .inner{
+    width:100%;
+    margin:0 auto;
+  }
+  .h1search_inner{
+    width:80vw;
+    margin:0 auto;
+  }
+  h1{
+    width:60%;
+    margin:0 auto;
+    float:none;
+  }
+  h1 img{
+    width:100%;
+    max-width:100%;
+    margin:0 auto;
+  }
+  .search{
+    float:none;
+    margin-top:2%;
+    overflow:hidden;
+  }
+  #form{
+    margin-top:0px;
+  }
+/* ナビゲーションCSS */
+  nav{
+    overflow:hidden;
+  }
+  nav ul li{
+    clear:both;
+    display:block;
+  }
+/* メインCSS */
+  main{
+    width:100%;
+    margin-left:0px;
+    margin-right:0px;
+  }
+  main .acco .box .click{
+    width:100%;
+  }
+  main .acco .box .clickover{
+    width:92%;
+  }
+}
+/*===============================================ここまで*/
+
+/* iPhone 6/7/8 Plus表示のCSS設定 */
+/*ここから============================================== */
+/* 画面の横幅が414px以下のとき */
+@media screen and (max-width:414px){
+/* ヘッダーCSS */
+  header .inner{
+    width:90%;
+    margin:0 auto;
+  }
+  .h1search_inner{
+    width:90vw;
+    margin : 0 auto;
+  }
+  h1 img{
+    max-width:100%;
+  }
+/* ナビゲーションCSS */
+  #nav-toggle {
+    visibility: visible;
+    width: 30px;
+    height: 26px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+  #nav-toggle span {
+    width: 100%;
+    height: 4px;
+    display: block;
+    position: absolute;
+    left: 0px;
+    background-color: #333;
+    transition: 0.5s;
+  }
+  #nav-toggle span:nth-child(1) {
+    top: 0px;
+  }
+  #nav-toggle span:nth-child(2) {
+    top: 11px;
+  }
+  #nav-toggle span:nth-child(3) {
+    top: 22px;
+  }
+  #nav-toggle span {
+
+  }
+  #nav-toggle.open span:nth-child(1) {
+    top: 11px;
+    transform: rotate(315deg);
+  }
+  #nav-toggle.open span:nth-child(2) {
+    width: 0px;
+    left: 50%;
+  }
+  #nav-toggle.open span:nth-child(3) {
+    top: 11px;
+    transform: rotate(-315deg);
+  }
+  nav{
+    width:100%;
+    margin-left:0px;
+    padding-top: 5%;
+    padding-bottom:2.3%;
+    }
+  nav ul {
+    width:100%;
+    margin : 0 auto;
+    padding:0px;
+    display: none;
+    left:0px;
+  }
+  nav li{
+    width:100%;
+    text-align: left;
+    float: right;
+    display: block;
+    margin-left: 200px;
+    margin-right:15%;
+  }
+  nav li a {
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right:2%;
+  }
+  nav li a:last-child {
+    margin-bottom: 2%;
+  }
+  
+/* メインCSS */
+  main .acco h2{
+    width:80%;
+  }
+  main .acco .ship p{
+    width:80%;
+  }
+  main .acco .plan p{
+    width:80%;
+  }
+  main .acco .boss p{
+    width:80%;
+  }
+  main .acco .photo img{
+    width:100%;
+    height:auto;
+  }
+  .scrollTop{
+    position:fixed;
+    right:1%;
+    bottom:10%;
+  }
+  
+  .acco .click{
+    width:100%;
+  }
+  .acco .clickover{
+    width:92%;
+  }
+}
+/*===============================================ここまで*/
+
+/* iPhone 6/7/8表示のCSS設定 */
+/*ここから============================================== */
+/* 画面の横幅が375px以下のとき */
+@media screen and (max-width:375px){
+/* ヘッダーCSS */
+  header .inner{
+    width:100%;
+    margin:0 auto;
+  }
+  .h1search_inner{
+    width:85vw;
+    margin : 0 auto;
+  }
+  h1 img{
+    max-width:100%;
+  }
+/* ナビゲーションCSS */
+  nav{
+    width:100%;
+    margin:0 auto;
+  }
+  nav ul{
+    width:100%;
+    margin : 0 auto;
+    padding:0px;
+  }
+  nav ul li{
+    width:100%;
+    margin : 0 auto;
+    text-align: center;
+    float:none;
+  }
+/* メインCSS */
+  .acco .click{
+    width:100%;
+  }
+  .acco .clickover{
+    width:92%;
+  }
+}
+/*===============================================ここまで*/

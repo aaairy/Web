@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>職業訓練  Lesson2 | 商品ページ</title>
+<link href="lesson2.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/lightbox.min.js"></script>
+<link rel="stylesheet" href="css/lightbox.min.css">
+<script>
+	lightbox.option({
+		albumLabel:"%2枚中　%1枚目",
+		fadeDuration:500,
+		imageFadeDuration:500,
+		resizeDuration:700,
+		positionFromTop:30,
+		showImageNumberLabel:true,
+		wrapAround:false
+	});
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('img/btn-home_on.png','img/btn-item_on.png','img/btn-canpaign_on.png','img/btn-gallery_on.png','img/btn-faq_on.png','img/btn-voice_on.png','img/btn-order_on.png')">
+<header>
+  <h1><a href="lesson2.html"><img src="img/logo.png" width="165" height="178" alt="jellybeans shop
+ジェリービーンズショップ"/></a></h1>
+  <nav>
+    <ul>
+      <li><a href="lesson2.html"><img src="img/btn-home.png" alt="home ホーム" width="250" height="65" id="btn01" onMouseOver="MM_swapImage('btn01','','img/btn-home_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+      <li><a href="item.html"><img src="img/btn-item_on.png" alt="item 商品" width="250" height="65" id="btn02" onMouseOver="MM_swapImage('btn02','','img/btn-item_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+      <li><a href="campaign.html"><img src="img/btn-canpaign.png" alt="campaign キャンペーン" width="250" height="65" id="btn03" onMouseOver="MM_swapImage('btn03','','img/btn-canpaign_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+      <li><a href="gallery.html"><img src="img/btn-gallery.png" alt="gallery ギャラリー" width="250" height="65" id="btn04" onMouseOver="MM_swapImage('btn04','','img/btn-gallery_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+      <li><a href="faq.html"><img src="img/btn-faq.png" alt="question よくある質問" width="250" height="65" id="btn05" onMouseOver="MM_swapImage('btn05','','img/btn-faq_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+      <li><a href="voice.html"><img src="img/btn-voice.png" alt="customer voice お客様の声" width="250" height="65" id="btn06" onMouseOver="MM_swapImage('btn06','','img/btn-voice_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+      <li><a href="form.html"><img src="img/btn-order.png" alt="catalog order カタログの注文" width="250" height="65" id="btn07" onMouseOver="MM_swapImage('btn07','','img/btn-order_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+    </ul>
+  </nav>
+</header>
+<div class="content">
+  <nav class="sidenav">
+    <ol class="clearfix">
+      <li><a href="#">通販<br>
+        利用規約</a></li>
+      <li><a href="#">運営会社<br>
+        について</a></li>
+      <li><a href="#">ショップ<br>
+        アクセス</a></li>
+    </ol>
+  </nav>
+  <main class="subpage">
+    <h2>商品</h2>
+<ol class="topic">
+      <li><a href="lesson2.html">home</a></li>
+      <li>商品</li>
+    </ol>
+    
+    <h3>おすすめのゼリービーンズ</h3>
+    <div class="items clearfix">
+      <p><a href="img/small/big01.jpg" data-lightbox="sample" data-title="画像1"><img src="img/small01.jpg" width="150" height="150" alt=""/></a></p>
+      <p><a href="img/small/big02.jpg" data-lightbox="sample" data-title="画像2"><img src="img/small02.jpg" width="150" height="150" alt=""/></a></p>
+      <p><a href="img/small/big03.jpg" data-lightbox="sample" data-title="画像3"><img src="img/small03.jpg" width="150" height="150" alt=""/></a></p>
+      <p><a href="img/small/big04.jpg" data-lightbox="sample" data-title="画像4"><img src="img/small04.jpg" width="150" height="150" alt=""/></a></p>
+      <p><a href="img/small/big05.jpg" data-lightbox="sample" data-title="画像5"><img src="img/small05.jpg" width="150" height="150" alt=""/></a></p>
+      <p><a href="img/small/big06.jpg" data-lightbox="sample" data-title="画像6"><img src="img/small06.jpg" width="150" height="150" alt=""/></a></p>
+      <p><a href="img/small/big07.jpg" data-lightbox="sample" data-title="画像7"><img src="img/small07.jpg" width="150" height="150" alt=""/></a></p>
+      <p><a href="img/small/big08.jpg" data-lightbox="sample" data-title="画像8"><img src="img/small08.jpg" width="150" height="150" alt=""/></a></p>
+      <p><a href="img/small/big09.jpg" data-lightbox="sample" data-title="画像9"><img src="img/small09.jpg" width="150" height="150" alt=""/></a></p>
+      <p><a href="img/small/big10.jpg" data-lightbox="sample" data-title="画像10"><img src="img/small10.jpg" width="150" height="150" alt=""/></a></p>
+    	<p><a href="img/small/big11.jpg" data-lightbox="sample" data-title="画像11"><img src="img/small11.jpg" width="150" height="150" alt=""/></a></p>
+		<p><a href="img/small/big12.jpg" data-lightbox="sample" data-title="画像12"><img src="img/small12.jpg" width="150" height="150" alt=""/></a></p>
+		<p><a href="img/small/big13.jpg" data-lightbox="sample" data-title="画像13"><img src="img/small13.jpg" width="150" height="148" alt=""/></a></p>
+		<p><a href="img/small/big14.jpg" data-lightbox="sample" data-title="画像14"><img src="img/small14.jpg" width="150" height="150" alt=""/></a></p>
+		<p><a href="img/small/big15.jpg" data-lightbox="sample" data-title="画像15"><img src="img/small15.jpg" width="150" height="150" alt=""/></a></p>
+		</div>
+  </main>
+  <footer>
+    <p><a href="lesson2.html">home</a>｜<a href="item.html">商品</a>｜<a href="campaign.html">キャンペーン</a>｜<a href="gallery.html">ギャラリー</a>｜<a href="faq.html">よくある質問</a>｜<a href="voice.html">お客様の声</a>｜<a href="form.html">カタログのご注文</a></p>
+    <p>Copyright &copy; 職業訓練授業課題.All Rights Reserved.</p>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>職業訓練  Lesson2 | カタログのご注文ページ</title>
+<link href="lesson2.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('img/btn-home_on.png','img/btn-item_on.png','img/btn-canpaign_on.png','img/btn-gallery_on.png','img/btn-faq_on.png','img/btn-voice_on.png','img/btn-order_on.png')">
+<header>
+  <h1><a href="lesson2.html"><img src="img/logo.png" width="165" height="178" alt="jellybeans shop
+ジェリービーンズショップ"/></a></h1>
+  <nav>
+    <ul>
+      <li><a href="lesson2.html"><img src="img/btn-home.png" alt="home ホーム" width="250" height="65" id="btn01" onMouseOver="MM_swapImage('btn01','','img/btn-home_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+      <li><a href="item.html"><img src="img/btn-item.png" alt="item 商品" width="250" height="65" id="btn02" onMouseOver="MM_swapImage('btn02','','img/btn-item_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+      <li><a href="campaign.html"><img src="img/btn-canpaign.png" alt="campaign キャンペーン" width="250" height="65" id="btn03" onMouseOver="MM_swapImage('btn03','','img/btn-canpaign_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+      <li><a href="gallery.html"><img src="img/btn-gallery.png" alt="gallery ギャラリー" width="250" height="65" id="btn04" onMouseOver="MM_swapImage('btn04','','img/btn-gallery_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+      <li><a href="faq.html"><img src="img/btn-faq.png" alt="question よくある質問" width="250" height="65" id="btn05" onMouseOver="MM_swapImage('btn05','','img/btn-faq_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+      <li><a href="voice.html"><img src="img/btn-voice.png" alt="customer voice お客様の声" width="250" height="65" id="btn06" onMouseOver="MM_swapImage('btn06','','img/btn-voice_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+      <li><a href="form.html"><img src="img/btn-order_on.png" alt="catalog order カタログの注文" width="250" height="65" id="btn07" onMouseOver="MM_swapImage('btn07','','img/btn-order_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+    </ul>
+  </nav>
+</header>
+<div class="content">
+  <nav class="sidenav">
+    <ol class="clearfix">
+      <li><a href="#">通販<br>
+        利用規約</a></li>
+      <li><a href="#">運営会社<br>
+        について</a></li>
+      <li><a href="#">ショップ<br>
+        アクセス</a></li>
+    </ol>
+  </nav>
+  <main class="subpage clearfix">
+    <h2>カタログのご注文</h2>
+<ol class="topic">
+      <li><a href="lesson2.html">home</a></li>
+      <li>カタログのご注文</li>
+</ol>
+    
+    <h3>ご注文フォーム</h3>
+    <form id="form1" name="form1" method="post">
+      <table class="formtable">
+        <tbody>
+          <tr>
+            <th>お名前</th>
+            <td><input name="name" type="text" required="required" id="name" placeholder="苗字　名前" maxlength="10"></td>
+          </tr>
+          <tr>
+            <th>住所</th>
+            <td><input name="textfield" type="text" id="textfield" size="30">            </td>
+          </tr>
+          <tr>
+            <th>性別</th>
+            <td><label>
+                <input type="radio" name="seibetsu" value="男性" id="seibetsu_0">
+                男性</label>
+              <label>
+                <input type="radio" name="seibetsu" value="女性" id="seibetsu_1">
+              女性</label>
+							<label>
+              	<input type="radio" name="seibetsu" value="その他" id="seibetsu_2">
+							その他 </label>
+							<label>
+              	<input type="radio" name="seibetsu" value="回答しない" id="seibetsu_3">
+             	回答しない</label>              <br>            </td>
+          </tr>
+          <tr>
+            <th><p>ほしいカタログナンバー</p></th>
+            <td><select name="select2" id="select2">
+              <option value="0">↓からお選びください</option>
+              <option value="A">A-1110</option>
+              <option value="B">B-2010</option>
+              <option value="C">C-3100</option>
+            </select></td>
+          </tr>
+          <tr>
+            <th>今後ほしいお菓子</th>
+            <td><label>
+                <input type="checkbox" name="CheckboxGroup1" value="グミ" id="CheckboxGroup1_0">
+                グミ
+              </label>
+              <label>
+                <input type="checkbox" name="CheckboxGroup1" value="ガム" id="CheckboxGroup1_1">
+              ガム</label>
+              <label>
+                <input type="checkbox" name="CheckboxGroup1" value="すあま" id="CheckboxGroup1_2">
+              すあま</label>
+              <label>
+                <input type="checkbox" name="CheckboxGroup1" value="塩せんべい" id="CheckboxGroup1_3">
+              塩せんべい</label>              <br>            </td>
+          </tr>
+          <tr>
+            <th><p>ご意見・ご感想</p></th>
+            <td><textarea name="textarea" cols="30" rows="4" id="textarea"></textarea></td>
+          </tr>
+        </tbody>
+      </table>
+			<p class="formsubmit">
+			  <input type="image" name="imageField" id="imageField" src="img/btn-submit.png">
+			</p>
+    </form>
+  </main>
+  <footer>
+    <p><a href="lesson2.html">home</a>｜<a href="item.html">商品</a>｜<a href="campaign.html">キャンペーン</a>｜<a href="gallery.html">ギャラリー</a>｜<a href="faq.html">よくある質問</a>｜<a href="voice.html">お客様の声</a>｜<a href="form.html">カタログのご注文</a></p>
+    <p>Copyright &copy; 職業訓練授業課題.All Rights Reserved.</p>
+  </footer>
+</div>
+</body>
+</html>

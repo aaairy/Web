@@ -1,0 +1,375 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>&#8220;BEGIN&#8221;NIG - 安藤愛里のポートフォリオサイト</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="サイト管理者である安藤愛里が現在までに作ってきたサイトを、自己紹介も兼ねて記載しているポートフォリオサイトです。" />
+<!-- CSS -->
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+<link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+<link href="css/darktooltip.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+<!-- javascript -->
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollify.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.darktooltip.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<!-- スクリプト内容は base.js に記述すること -->
+<script>  // #nav-toggleのみここに記述
+  $(function() {
+    // #nav-toggleをクリックしたときの設定
+	  $("#nav-toggle").on("click",function(){
+		// ナビゲーションメニューを開閉
+		$("nav ul").slideToggle();
+		// #nav-toggleにクラス名[open]を追加・削除
+		$(this).toggleClass("open");
+    });
+    // ボタン押下時にナビゲーションが閉じるように設定
+    $('.navinner a[href]').on('click', function(event) {
+      // クリックイベントが発生したら実行
+      $('#nav-toggle').trigger('click');
+    });
+  })
+</script>
+</head>
+
+<body>
+<div id="all">
+  <div id="contents" class="hidden">
+    <header class="box">
+      <div class="headerinner clearfix">
+        <div class="logo-img">
+          <h1><img src="img/logo.png" width="983" height="148" alt=""/></h1>
+        </div>
+        <nav class="navigation">
+          <div id="nav-toggle"><!--nav-toggleセレクタで設定している-->
+            <span></span><!--右上のメニューボタン1本目-->
+            <span></span><!--右上のメニューボタン2本目-->
+            <span></span><!--右上のメニューボタン3本目-->
+          </div>
+          <ul class="header">
+            <li><a href="#all">HOME</a></li>
+            <li><a href="#summary">SUMMARY</a></li>
+            <li><a href="#profile">PROFILE</a></li>
+            <li><a href="#favorite">FAVORITE</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div id="fullpage">
+        <section id="summary" class="box summary">
+          <div class="img1">
+            <h2><img src="img/summary-sign.png" width="262" height="155" alt=""/></h2>
+          </div>
+          <div class="nonephoto"><img src="img/profile-s.png" width="1549" height="1033" alt=""/></div>
+          <div class="text">
+            <p>当サイトはわたくし、安藤愛里が<br>
+              2019年12月～2020年3月までの<br>
+              間に作成したサイトを<br>
+              紹介しています。<br>
+              24歳安藤愛里を、どうか<br>
+            よろしくお願いいたします！</p>
+          </div>
+        </section>
+        <section id="profile" class="box profile">
+          <div class="img2">
+            <h2><img src="img/profile-sign.png" width="236" height="155" alt=""/></h2>
+          </div>
+          <div class="text">
+            <table class="base">
+              <tbody>
+                <tr class="baseheader">
+                  <th colspan="2" scope="row">"安藤愛里"とは</th>
+                </tr>
+                <tr class="basebody">
+                  <th scope="row">名前</th>
+                  <td>安藤　愛里</td>
+                </tr>
+                <tr class="basebody">
+                  <th scope="row">希望職種</th>
+                  <td>Webコーダー(フロントエンドエンジニア)</td>
+                </tr>
+                <tr class="basebody">
+                  <th scope="row">略歴</th>
+                  <td><p>1996年(平成8年)千葉県柏市生まれ、船橋市育ち。<br>
+                    千葉工業大学情報科学部情報ネットワーク学科卒業。<br>
+                    富士通エフ・アイ・ピー・システムズ株式会社に入社。<br>
+                    官公庁様向けのシステム改修を行っているチームに配属され元号改正に伴い官公庁が業務で取り扱うシステムの改修作業に当たったが、1年9ヵ月で退職。</p>
+                    <p>3か月間の休養で本当に自分がやりたいことがWebコーダーとわかり、2019年12月よりWebデザイン系の職業訓練を受講した。</p>
+                  </td>
+                </tr>
+                <tr class="basebody">
+                  <th scope="row"><p>社歴</p></th>
+                  <td><p>2018.04 ～ 2019.09<br>
+                  富士通エフ・アイ・ピー・システムズ株式会社</p></td>
+                </tr>
+                <tr class="basebody">
+                  <th scope="row">自己PR</th>
+                  <td><p>中学生の頃より独学でHTMLやCSSを学び、Windows標準エディタを用いて実際にサイト作成を行っておりました。</p>
+                    <p>昨年からPhotoshopやDreamweaverを学び、現在はWebページのフロントエンドエンジニアのプログラミングの業務を遂行することができます。</p>
+                    <p>大学で身に着けたSEの知識と、HTML5やCSS3を用いたコーディング技術で幅広い案件に対応いたします。</p>
+                  </td>
+                </tr>
+                <tr class="basebody">
+                  <th scope="row">メッセージ</th>
+                  <td><p>どんなことでも一生懸命真面目に取り組み、メモ帳を肌身離さず
+                  全力で対応いたしますので、どうかよろしくお願いいたします！</p></td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="skill">
+              <tbody>
+                <tr class="skillheader">
+                  <th colspan="2" >スキル</th>
+                </tr>
+                <tr class="skillbody">
+                  <td>
+                    <table class="ireko">
+                      <tbody>
+                        <tr>
+                          <th scope="row">HTML</th>
+                          <td>★★★★</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">CSS</th>
+                          <td>★★★★</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Photoshop</th>
+                          <td>★★</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Dreamweaver</th>
+                          <td>★★★</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">XD</th>
+                          <td>★★</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="ireko">
+                      <tbody>
+                        <tr>
+                          <th scope="row">Word</th>
+                          <td>★★★</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Excel</th>
+                          <td>★★★</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">PowerPoint</th>
+                          <td>★★★★</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">C++</th>
+                          <td>★★★★</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Java</th>
+                          <td>★</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section id="favorite" class="box favorite">
+          <div class="img1">
+            <h2><img src="img/favorite-sign.png" width="236" height="155" alt=""/></h2>
+          </div>
+          <div class="text">
+            <div class="list">
+              <dl>
+                <dt class="music favcontents"><a class="east" data-tooltip="Perfume<br>V6<br>アンジュルム<br>米津玄師<br>King Gnu">音楽</a></dt>
+                <dd class="toggle">Perfume,V6,アンジュルム,<br>米津玄師,King Gnu</dd>
+                <dt class="game favcontents"><a class="west" data-tooltip="艦これ<br>Minecraft<br>KingdomHeartⅢ<br>Detroit<br>FE">ゲーム</a></dt>
+                <dd class="toggle">艦これ,Minecraft,<br>KingdomHeartⅢ,Detroit,FE</dd>
+                <dt class="handicraft favcontents"><a class="east" data-tooltip="刺繍(シンデレラ城の風景画)<br>コスプレ衣装">手芸</a></dt>
+                <dd class="toggle">刺繍(シンデレラ城の風景画),<br>コスプレ衣装</dd>
+                <dt class="craft favcontents"><a class="west" data-tooltip="プラモデル(軍艦)">工作</a></dt>
+                <dd class="toggle">プラモデル(軍艦)</dd>
+              </dl>
+            </div>
+          </div>
+        </section>
+        <section id="portfolio" class="box portfolio">
+          <div class="img2">
+            <h2><img src="img/portfolio-sign.png" width="262" height="155" alt=""/></h2>
+          </div>
+          <div class="pfinner">
+            <div class="portfolio-photo">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  
+                  <div class="swiper-slide">
+                    <a href="../cozychat/cozychat.html" class="tooltip" data-tooltip="<span>cozychat</span><br>デザインカンプのみだが初デザイン" target="new">
+                      <img src="img/portfolio/cozychat-s.jpg" width="270" height="200" alt=""/>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="../lesson1/lesson1/lesson1.html" class="tooltip" data-tooltip="<span>cometubu</span><br>お米の販売サイトをイメージ" target="new">
+                      <img src="img/portfolio/Lesson1-s.png" alt=""/>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="../lesson2/lesson2.html" class="tooltip" data-tooltip="<span>jellybeans</span><br>ジェリービーンズの販売サイトをイメージ" target="new">
+                      <img src="img/portfolio/jellybeans-s.png" alt=""/>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="../kyouritz-dayservice/index.html" class="tooltip" data-tooltip="<span>キョウリツデイサービス</span><br>介護施設の紹介サイトをイメージ" target="new">
+                      <img src="img/portfolio/dayservice-s.png" alt=""/>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="../rosegarden-exercise/index.html" class="tooltip" data-tooltip="<span>ローズガーデン リコ</span><br>バラ専門店のサイトをイメージ" target="new">
+                      <img src="img/portfolio/ROSE_GARDEN_RICO-s.png" alt=""/>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="../angkor-wat/angkor-wat.html" class="tooltip" data-tooltip="<span>World Heritage site</span><br>アンコールワットの紹介サイトをイメージ" target="new">
+                      <img src="img/portfolio/angkorwat-s.png" alt=""/>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="../ability5/ability5.html" class="tooltip" data-tooltip="<span>ability5</span><br>約6時間で構築したサイト" target="new">
+                      <img src="img/portfolio/ability5-s.png" alt=""/>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="../lesson-smp/index4.html" class="tooltip" data-tooltip="<span>海月～くらげ～</span><br>生き物の「海月」をテーマとした紹介サイト" target="new">
+                      <img src="img/portfolio/kurage-s.png" alt=""/>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="../final_flex/index.html" class="tooltip" data-tooltip="<span>WARSHIP</span><br>第二次世界大戦の歴史を簡易的にまとめた完全自作サイト" target="new">
+                      <img src="img/portfolio/WARSHIP-s.png" alt=""/>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div> <!-- スライダー前ボタン -->
+                <div class="swiper-button-next"></div> <!-- スライダー次ボタン -->
+              </div>
+            </div>
+          </div>
+          <div class="pf-text clearfix">
+            <ol>
+              <li><img src="img/portfolio/cozychat-s.jpg" width="270" height="200" alt=""/>
+                <a href="../cozychat/cozychat.html" target="new">
+                <p>cozychat</p>
+                </a></li>
+              <li><img src="img/portfolio/Lesson1-s.png" alt=""/>
+                <a href="../lesson1/lesson1/lesson1.html" target="new">
+                <p>cometubu</p>
+                </a></li>
+              <li><img src="img/portfolio/jellybeans-s.png" alt=""/>
+                <a href="../lesson2/lesson2.html" target="new">
+                <p>jellybeans</p>
+                </a></li>
+              <li><img src="img/portfolio/dayservice-s.png" alt=""/>
+                <a href="../kyouritz-dayservice/index.html" target="new">
+                <p>ｷｮｳﾘﾂﾃﾞｲｻｰﾋﾞｽ</p>
+                </a></li>
+              <li><img src="img/portfolio/ROSE_GARDEN_RICO-s.png" alt=""/>
+                <a href="../rosegarden-exercise/index.html" target="new">
+                <p>ﾛｰｽﾞｶﾞｰﾃﾞﾝ ﾘｺ</p>
+                </a></li>
+              <li><img src="img/portfolio/angkorwat-s.png" alt=""/>
+                <a href="../angkor-wat/angkor-wat.html" target="new">
+                <p>World Heritage site</p>
+                </a></li>
+              <li><img src="img/portfolio/ability5-s.png" alt=""/>
+                <a href="../ability5/ability5.html" target="new">
+                <p>ability5</p>
+                </a></li>
+              <li><img src="img/portfolio/kurage-s.png" alt=""/>
+                <a href="../lesson-smp/index4.html" target="new">
+                <p>海月～くらげ～</p>
+                </a></li>
+              <li><img src="img/portfolio/WARSHIP-s.png" alt=""/>
+                <a href="../warship/index.html" target="new">
+                <p>WARSHIP</p>
+                </a></li>
+            </ol>
+            
+          </div>
+        </section>
+      </div>
+      
+  </main>
+  <footer>
+    <div id="pagetop"><a href="#all"></a></div>
+    <ul>
+      <li><a href="#all">HOME</a></li>
+      <li><a href="#summary">SUMMARY</a></li>
+      <li><a href="#profile">PROFILE</a></li>
+      <li><a href="#favorite">FAVORITE</a></li>
+      <li><a href="#portfolio">PORTFOLIO</a></li>
+      </ul>
+  </footer>
+  </div>
+</div>
+<script> // ポートフォリオのスライダー表示のみ記述
+var mySwiper = new Swiper ('.swiper-container', {
+  // ここからオプション
+  slidesOffsetBefore: 50,
+  slidesOffsetAfter: 50,
+  autoHeight:false,
+  autoplay: {
+    delay: 3000,
+  },
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints:{
+    1365:{
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 0,
+      slidesOffsetBefore: 50,
+      slidesOffsetAfter: 50,
+    },
+    768:{
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 0,
+      slidesOffsetBefore: 0,
+      slidesOffsetAfter: 0,
+    },
+    414:{
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 0,
+      slidesOffsetBefore: 35,
+      slidesOffsetAfter: 0,
+    },
+    375:{
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 0,
+      slidesOffsetBefore: 20,
+      slidesOffsetAfter: 0,
+      navigation: {
+        nextEl: '',
+        prevEl: '',
+      },
+    }
+  }
+})
+</script>
+</body>
+</html>

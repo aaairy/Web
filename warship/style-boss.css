@@ -1,0 +1,125 @@
+@charset "utf-8";
+.acco table {
+    width: 70%;
+    /*white-space: nowrap;*/
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 0;
+    /*table-layout: fixed;*/
+    font-size:1.2em;
+}
+/*table ul li {
+    font-size: 1em;
+    text-indent: 25px;
+    list-style-type: none;
+}
+table ul li:before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    display: inline-block;
+    border-radius: 100%;
+    background-color: #2F2F2F;
+    position: relative;
+    left: -15px;
+    top: -3px;
+}*/
+table ul{
+  /*list-style-type: none;*/
+  text-indent: 25px;
+}
+
+table .name {
+  width: 15%;
+  white-space: nowrap;
+}
+table .life {
+    margin: 0 auto;
+    width: 27%;
+    text-align: center;
+}
+table .level {
+    width: 14%;
+    text-align: center;
+}
+table .header {
+    background-color: #6392c6;
+    color: #f2f2f2;
+}
+table .mainbody th {
+    background-color: #b4d1d7;
+}
+table .mainbody th a {
+	color: #7c0606;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+table .mainbody th a:hover {
+	text-decoration: underline;
+}
+.acco .box .click  {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    list-style-type: none;
+}
+
+table p {
+    text-align: center;
+}
+table ul li a {
+	color: #7c0606;
+	text-decoration: none;
+}
+table ul li a:hover {
+	color: #7c0606;
+	text-decoration: underline;
+}
+
+.box .click .list a {
+  color: #7c0606;
+  text-decoration: none;
+}
+.box .click .list a:hover {
+  text-decoration: underline;
+  color: #7c0606;
+}
+ 
+@media screen and (max-width:1080px){
+  .last td:last-child {
+    border-bottom: solid 1px #ccc;
+    width: 100%;
+  }
+  .box th,td {
+    border-bottom: none;
+    display: block;
+    width: 98%;
+    padding-top:2%;
+    padding-bottom:2%;
+    padding-left:1%;
+    padding-right:1%;
+  }
+  .box .life{
+    width:98%;
+    background-color: #f2f2f2;
+    color: #2f2f2f;
+  }
+  .box .level{
+    width:98%;
+    background-color: #f2f2f2;
+    color: #2f2f2f;
+  }
+  .box .plan{
+    width:98%;
+    background-color: #f2f2f2;
+    color: #2f2f2f;
+  }
+.box .header .name {
+    color: #7c0606;
+    background-color: #b4d1d7;
+    font-size: 1.2em;
+  }
+}

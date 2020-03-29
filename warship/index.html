@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WARSHIP - トップページ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="第二次世界大戦の日本の歴史を、軍艦、作戦、司令長官の3つの視点から知れるサイトです。" />
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.rollover.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick-theme.css"/>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="style-index.css" rel="stylesheet" type="text/css">
+<link href="your-path-to-fontawesome/css/all.css" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+<script type="text/javascript">
+	$(document).ready(function() {
+  	// #nav-toggleをクリックしたときの設定
+	$("#nav-toggle").on("click",function(){
+	
+		// ナビゲーションメニューを開閉
+		$("nav ul").slideToggle();
+	
+		// #nav-toggleにクラス名[open]を追加・削除
+		$(this).toggleClass("open");
+	
+	});
+	// ボタン押下時にナビゲーションが閉じるように設定
+	$('.navinner a[href]').on('click', function(event) {
+		// クリックイベントが発生したら実行
+        $('#nav-toggle').trigger('click');
+    });
+
+	// ロールオーバーjavascript処理
+	$(".nav a img").rollover("_over");
+	// カルーセルjavascript処理
+	$('.your-class').slick({
+	  dots: true,
+	  infinite: true,
+	  speed: 800,
+	  fade: true,
+	  autoplay: true,
+	  arrows:true,
+	  cssEase: 'linear',
+    adaptiveHeight:true
+	});
+  	// スクロールTop表示javascript処理
+  	var scrollTop = $(".scrollTop");
+  	$(window).scroll(function() {
+	var topPos = $(this).scrollTop();
+	if (topPos > 100) {
+	  $(scrollTop).css("opacity", "1");
+	  } else {
+	  $(scrollTop).css("opacity", "0");
+	  }
+  	});
+  	$(scrollTop).click(function() {
+	$('html, body').animate({scrollTop: 0}, 800);
+	return false;
+  }); 
+}); 
+</script>
+</head>
+
+<body>
+<div id="all">
+	<header class="clearfix">
+    <div class="h1search_inner clearfix">
+      <div class="inner">
+        <h1><a href="#all"><img src="img/logo_n.png" width="300" height="100" alt="WARSHIP"/></a></h1>
+      </div>
+      <div class="search">
+        <form id="form" method="get" action="http://www.google.co.jp/search" target="_blank">
+          <input type="text" id="formtext" class="fs" name="q" size="20" maxlength="50" value="" placeholder="Googleで検索">
+          <input type="submit" id="formsubmit" class="fsu" name="btng" value="検索">
+          <input type="hidden" name="hl" value="ja">
+        </form>
+        <!--<script async src="https://cse.google.com/cse.js?cx=000301146086105800109:d66sg45qlfn"></script>
+<div class="gcse-search"></div>-->
+      </div>
+    </div>
+		<div class="nav">
+		  <nav class="clearfix">
+        <div id="nav-toggle"><!--nav-toggleセレクタで設定している-->
+          <span></span><!--右上のメニューボタン1本目-->
+          <span></span><!--右上のメニューボタン2本目-->
+          <span></span><!--右上のメニューボタン3本目-->
+        </div>
+        <div class="navinner">
+          <ul>
+            <li><a href="#all"><img src="img/btn_home.png" width="175" height="100" alt="HOME"/></a></li>
+            <li><a href="ship.html"><img src="img/btn_ship.png" width="175" height="100" alt="RELATE SHIP"/></a></li>
+            <li><a href="plan.html"><img src="img/btn_plan.png" width="175" height="100" alt="RELATE PLAN"/></a></li>
+            <li><a href="boss.html"><img src="img/btn_boss.png" width="175" height="100" alt="RELATE BOSS"/></a></li>
+          </ul>
+        </div>
+		  </nav>
+		</div>
+    
+	</header>
+	<main>
+		<div class="carouselInner">
+     <ul class="your-class">
+      <li class="item"><a href="#1"><img src="img/mainimage_1.png" alt="真珠湾の戦艦ミズーリの写真"/></a></li>
+      <li class="item"><a href="#2"><img src="img/mainimage_2.png" alt="夕焼けと海の写真"/></a></li>
+      <li class="item"><a href="#3"><img src="img/mainimage_3.png" alt="戦艦アリゾナが沈んでいく白黒写真"/></a></li>
+     </ul>
+    </div>
+		<div class="acco">
+		  <section class="ship">
+			  <h2>軍艦から学ぶ</h2>
+		    <p class="textinner">第二次世界大戦で大日本帝国海軍が使用していた軍艦を、
+			   5つの主要な作戦を元にまとめたページです。</p>
+			  <p class="photo">
+          <a href="ship.html">
+            <img src="img/maincontent1.jpg" width="800" height="300" alt="軍艦一覧はこちらをクリック！"/>
+          </a>
+			  </p>
+		  </section>
+		  <section class="plan">
+			  <h2>歴史から学ぶ</h2>
+			  <p class="textinner">第二次世界大戦で大日本帝国海軍が敵国と戦闘した概要を、
+			  5つの作戦からまとめたページです。</p>
+        <p class="photo">
+          <a href="plan.html">
+            <img src="img/maincontent2.jpg" width="800" height="300" alt="作戦一覧はこちらをクリック！"/>
+          </a>
+			  </p>
+		  </section>
+		  <section class="boss">
+			<h2>司令長官から学ぶ</h2>
+        <p class="textinner">第二次世界大戦の5つの作戦から大日本帝国海軍の司令長官を
+			   務めた方々をまとめたページです。</p>
+        <p class="photo">
+          <a href="boss.html">
+            <img src="img/maincontent3.jpg" width="800" height="300" alt="司令長官はこちらをクリック！"/>
+          </a>
+			  </p>
+		  </section>
+		  <section class="twitter">
+        <h2 class="sns">その他の情報</h2>
+          <a class="twitter-timeline" data-lang="ja" data-width="70%" margin="0 auto" data-height="500" data-theme="dark" href="https://twitter.com/KanColle_STAFF?ref_src=twsrc%5Etfw" alt="Twitter情報が表示されています。">Tweets by KanColle_STAFF</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div id="stop" class="scrollTop">
+				  <a href="">Top</a>
+			  </div>
+		  </section>
+		</div>
+	</main>
+	<footer>
+    <div class="inner">
+      <ul class="link">
+        <li><a href="#all">home</a></li>
+        <li><a href="ship.html">Relate Ship</a></li>
+        <li><a href="plan.html">Relate Plan</a></li>
+        <li><a href="boss.html">Relate Boss</a></li>
+      </ul>
+    </div>
+  </footer>
+ </div>
+</body>
+</html>

@@ -1,0 +1,212 @@
+@charset "utf-8";
+p,h1,h2 ,h3,ul,body{
+	padding: 0px;
+	margin: 0px;
+}
+#all {
+	font-size: 95%;
+	line-height: 1.5;
+	margin: 0 auto;
+	width: 100%;
+}
+header{
+  background-image: url("img/header-bg.jpg");
+  background-position: left 30% top 35%;
+  height: 225px;
+  position: relative;
+}
+.header {
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.header .nav-bg{
+  width:100%;
+  background-color:#a97f80;
+  margin-top:165px;
+  height:60px;
+  background-position:bottom;
+}
+.header .logo{
+  position:absolute;
+  top:15%;
+  left:13%;
+}
+header .btn{
+  width:74%;
+  margin: 0 auto;
+  display:flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  clear:both;
+  
+}
+h2 {
+	color: #292929;
+}
+img {
+	vertical-align: bottom;
+	margin: 0 auto;
+	line-height: 1.5;
+}
+main{
+  overflow:hidden;
+}
+main .main {
+	margin: 0 auto;
+	width: 1000px;
+	display: block;
+ 
+}
+main .histoy {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+
+main ul {
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+	list-style-type: none;
+}
+main li {
+	float: left;
+}
+.syokai .setsumei {
+	margin: 0 243px 0;
+	width: 850px;
+}
+.what .syokai {
+	border: 1px solid #fff;
+	padding: 10px;
+	background-color: #B89695;
+	-webkit-box-shadow: 10px 10px 3px #ccc;
+	margin: 15px 50px;
+	box-shadow: 10px 10px 3px #ccc;
+	color: #FFFFFF;
+	width: 850px;
+}
+main .what {
+	margin: 0 auto;
+	width: 1000px;
+}
+.histoy .inner {
+	margin: 15px 50px;
+	padding: 10px;
+	background-color: #B89695;
+	-webkit-box-shadow: 10px 10px 3px #ccc;
+	box-shadow: 10px 10px 3px #ccc;
+	border: 1px solid #fff;
+	overflow: hidden;
+	color: #FFFFFF;
+	width: 850px;
+}
+.history .photo1 {
+	margin: 0 auto;
+	width: 900px;
+}
+.cambodia .photo2 {
+	float: left;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.cambodia .table1 {
+	height: 400px;
+	border-collapse: collapse;
+	border: 3px solid #904748;
+	width: 600px;
+	color: #FFFFFF;
+}
+.table1 th, .table1 td {
+	padding: 10px;
+	background-color: #B89695;
+}
+.table1 tr {
+	border-bottom: 1px dotted #904748;
+}
+.table1 tr.last {
+	border: none;
+}
+.table1 th {
+	border-right: 2px solid #904748;
+	font-weight: normal;
+	text-align: right;
+	color: #2B2B2B;
+}
+.cambodia .table2 {
+	border: 1px solid #fff;
+}
+.cambodia .table3 {
+	border: 1px solid #fff;
+}
+.cambodia .table1 tr:nth-child(odd) {
+	background-color: #FFBD8A;
+}
+.cambodia .table1 tr:nth-child(even) {
+	background-color: #B2BC7C;
+}
+.access .map {
+	margin: 10px 48px;
+	width: 1000px;
+}
+.pagetop {
+	text-align: right;
+	padding-top: 20px;
+	width: auto;
+}
+footer {
+	background-color: #a97f7f;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 50px;
+}
+footer a {
+	text-decoration: none;
+	color: #1D1D1D;
+}
+footer a:hover {
+	color: #B46B5F;
+}
+.access {
+	margin: 0 auto;
+	width: 1000px;
+}
+main .cambodia {
+	margin: 0 auto;
+	width: 1000px;
+}
+.map iframe {
+	vertical-align: bottom;
+	margin-left: 48px;
+}
+/*.map img  {
+	display: inline-block;
+	transition-duration: 0.3s;
+}
+.map img:hover {
+	transform: scale(1,1);
+	transition-duration: 0.3s;
+}*/
+	.zoom{
+		width: 355px;
+		height: 254px;
+		overflow: hidden;
+		display: inline-block;
+		vertical-align: bottom;
+	}
+	.zoom img {
+    -moz-transition: -moz-transform 0.5s linear;
+    -webkit-transition: -webkit-transform 0.5s linear;
+    -o-transition: -o-transform 0.5s linear;
+    -ms-transition: -ms-transform 0.5s linear;
+    transition: transform 0.5s linear;
+}
+.zoom img:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}

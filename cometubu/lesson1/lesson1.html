@@ -1,0 +1,286 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>職業訓練 Lesson1</title>
+<style type="text/css">
+</style>
+<link href="lesson1.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script type="text/javascript" src="js/jquery.textresizer.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript">
+// マウスオーバー
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+// ロールオーバー
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+// 古いブラウザから新しいブラウザまで対応可能
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+// ロールオーバーに必要な画像をロード
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<script>	
+$(function(){
+	// メイン画像のカルーセル
+	$(".slide").carouFredSel({
+		circular: true,
+		direction: "left",
+		scroll:{
+			duration: 800,
+			fx: "scroll",
+			easing: "swing",
+			items: 1
+		},
+		auto:{
+			play: true,
+			timeoutDuration: 3500
+		},
+		item:{
+			visible: 1,
+			start: 0
+		},
+		prev: ".btn-prev",
+		next: ".btn-next",
+		pagination:{
+			container: ".slide-pg"
+		}	
+	});
+	// アレンジメニューのカルーセル
+	$(".slide2").carouFredSel({
+		circular: true,
+		direction: "left",
+		scroll:{
+			duration: 1000,
+			fx:"scroll",
+			easing: "swing",
+			items: 1
+		},
+		auto:{
+			play: true,
+			timeoutduration: 3500
+		},
+		items:{
+			visible: 3,
+			start: 0
+		},
+		prev: ".slide2-prev",
+		next: ".slide2-next",
+		pagination:{
+			container:"slide2-pg"
+		}
+	});
+		$(".textsize a").textresizer({
+		target: ".text,.side,.contact,footer",
+		sizes: ["80%","100%","120%"],
+		selectedIndex: 1
+	});
+});
+</script>
+
+</head>
+<body onLoad="MM_preloadImages('img/btn-home_on.png','img/btn-menu_on.png','img/btn-rice_on.png','img/btn-arrange_on.png','img/btn-side_on.png','img/btn-contact_on.png')">
+	<div id="all">
+		<header>
+			<div class="inner">
+				<h1>
+				  <a href="lesson1.html">
+				   <img src="img/logo.png" width="420" height="109" alt="お食事処　白米の店　cometubu" class="logo-img"/>
+				  </a>
+				</h1>
+				<div class="text">
+				  <p>〒164-8787 東京都中野区東中野4-2-3<br>
+				  専門学校東京テクニカルカレッジ テラハウスICA<br>
+				  TEL:03-××××-××××<br>
+				  職業訓練授業課題</p>
+				</div>
+				<div class="textsize">
+				  <p>文字サイズ</p>
+				  <ul>
+					<li><a href="#">小</a></li>
+					<li><a href="#">中</a></li>
+					<li><a href="#">大</a></li>
+				  </ul>
+				</div>
+			</div>
+		</header>
+		
+		<nav>
+			<ul>
+				<li>
+					<a href="lesson1.html">
+						<img src="img/btn-home.png" alt="ホーム" width="50" height="52" id="btn_home" onMouseOver="MM_swapImage('btn_home','','img/btn-home_on.png',1)" onMouseOut="MM_swapImgRestore()"/>
+					</a>
+				</li>
+				<li>
+					<a href="#menu">
+						<img src="img/btn-menu.png" alt="メニュー" width="180" height="52" id="btn_menu" onMouseOver="MM_swapImage('btn_menu','','img/btn-menu_on.png',1)" onMouseOut="MM_swapImgRestore()"/>
+					</a>
+				</li>
+				<li>
+					<a href="#rice">
+						<img src="img/btn-rice.png" alt="ライス" width="180" height="52" id="btn_rice" onMouseOver="MM_swapImage('btn_rice','','img/btn-rice_on.png',1)" onMouseOut="MM_swapImgRestore()"/>
+					</a>
+				</li>
+				<li>
+					<a href="#arrange">
+						<img src="img/btn-arrange.png" alt="アレンジメニュー" width="180" height="52" id="btn_arrange" onMouseOver="MM_swapImage('btn_arrange','','img/btn-arrange_on.png',1)" onMouseOut="MM_swapImgRestore()"/>
+					</a>
+				</li>
+				<li>
+					<a href="#side">
+						<img src="img/btn-side.png" alt="サイドメニュー" width="180" height="52" id="btn_side" onMouseOver="MM_swapImage('btn_side','','img/btn-side_on.png',1)" onMouseOut="MM_swapImgRestore()"/>
+					</a>
+				</li>
+				<li class="last">
+					<a href="#contact">
+						<img src="img/btn-contact.png" alt="アクセス" width="180" height="52" id="btn_contact" onMouseOver="MM_swapImage('btn_contact','','img/btn-contact_on.png',1)" onMouseOut="MM_swapImgRestore()"/>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<main>
+		  <div class="slide-outer">
+			 <div class="slide">
+				<p><img src="img/mainimage.jpg" width="1000" height="450" alt="おいしいお米を食べよう"/></p>
+				<p><img src="img/main1.jpg" width="1000" height="450" alt="おいしいお米を食べよう"/></p>
+				<p><img src="img/main3.jpg" width="1000" height="450" alt="おいしいお米を食べよう"/></p>
+				<p><img src="img/main4.jpg" width="1000" height="450" alt="おいしいお米を食べよう"/></p>
+				<p><img src="img/main5.jpg" width="1000" height="450" alt="おいしいお米を食べよう"/></p>
+				</div>
+			 <div class="slide-pg"></div>
+			 <div class="slide-btn">
+				<p><a href="#" class="btn-prev"><img src="img/prev.png" width="50" height="45" alt=""/></a></p>
+				<p><a href="#" class="btn-next"><img src="img/next.png" width="50" height="45" alt=""/></a></p>
+			 </div>
+         </div>
+		 <section class="menu" id="menu">
+			<h2><img src="img/title-menu.png" width="274" height="66" alt="menu"/></h2>
+			<div class="box">
+			  <h3>白米　&yen;300</h3>
+			  <p><img src="img/menu-photo01.jpg" width="280" height="230" alt="白米"/></p>
+			  <p class="text">サイドメニューからお好みのお惣菜をお選びいただけます。プラス&yen;120より</p>
+			</div>
+			<div class="box">
+			  <h3>白米+紀州梅　&yen;400</h3>
+			  <p><img src="img/menu-photo02.jpg" width="280" height="230" alt="白米+紀州梅"/></p>
+			  <p class="text">サイドメニューからお好みのお惣菜をお選びいただけます。プラス&yen;120より</p>
+			</div>
+			<div class="box">	
+			  <h3>白米+たまご　&yen;400</h3>
+			  <p><img src="img/menu-photo03.jpg" width="280" height="230" alt="白米+たまご"/></p>
+			  <p class="text">サイドメニューからお好みのお惣菜をお選びいただけます。プラス&yen;120より</p>
+			</div>
+		 </section>
+			
+		 <section class="rice" id="rice">
+			<h2><img src="img/title-rice.png" width="239" height="66" alt="ライス"/></h2>
+			<div class="inner">
+				<p class="photo"><img src="img/rice-photo01.jpg" width="240" height="350" alt="稲"/></p>
+				<div class="text">
+				  <h3>米づくりは「苗半作」</h3>
+				  <p>苗の出来でその年の作柄の半分は決まってしまう、という意味です。がっちりした丈夫な苗ならば、田んぼに根をどんどん張りどっしりと成長していきます。それが貧弱な苗ですと、寒さや風に弱く害虫にもやられやすいのです。
+				  丈夫な苗の作り方は、水をあげすぎないこと、そして風をあてるタイミングです。少し厳しい条件で育てるほうが、田んぼに植えてからもたくましく成長してくれます。</p>
+				  <h3>美味しさへのこだわり</h3>
+				  <p>収穫は、稲穂がよく熟すのを待って刈り取りをします。こうすることで米の味、歯ざわりがよくなります。乾燥は、新鮮な風味を損なわないように、自然に近い通風乾燥でゆっくりと時間をかけて行います。お米は低温で貯蔵し、発送直前に精米いたします。</p>
+				  <p class="btn"><a href="#"><img src="img/btn-ricehp.png" width="320" height="40" alt="契約農家さんのホームページはコチラから"/></a></p>
+				</div>
+            </div>
+		</section>
+		<section class="arrange" id="arrange">
+			<h2><img src="img/title-arrange.png" width="458" height="66" alt="アレンジメニュー"/></h2>
+			  <div class="inner">
+				  <div class="slide2">
+					<p><img src="img/arrange-photo01.jpg" width="280" height="230" alt="きのこの炊き込みご飯"/></p>
+					<p><img src="img/arrange-photo02.jpg" width="280" height="230" alt="きゅうりと梅肉の混ぜ込みご飯"/></p>
+					<p><img src="img/arrange-photo03.jpg" width="280" height="230" alt="こんにゃくとたこの炊き込みご飯"/></p>
+					<p><img src="img/arrange-photo04.jpg" width="280" height="230" alt="漬けマグロの鉄火丼"/></p>
+					<p><img src="img/arrange-photo05.jpg" width="280" height="230" alt="漬けサーモンのせ丼"/></p>
+					<p><img src="img/arrange-photo06.jpg" width="280" height="230" alt="ビーフシチュー"/></p>
+				  </div>
+				  <a href="#" class="slide2-prev"><img src="img/prev.png" width="50" height="45" alt=""/></a>
+				  <a href="#" class="slide2-next"><img src="img/next.png" width="50" height="45" alt=""/></a>
+				<div class="slide2-pg"></div>
+			</div>
+		</section>	
+		<section class="side" id="side">
+			<h2><img src="img/title-side.png" width="378" height="66" alt="サイドメニュー"/></h2>
+			<table>
+			  <tbody>
+				<tr>
+				  <th>納豆</th>
+				  <td><p>説明文を入れます。</p></td>
+			    </tr>
+				<tr>
+				  <th>海苔</th>
+				  <td>説明文を入れます。説明文を入れます。説明文を入れます。説明文を入れます。</td>
+			    </tr>
+				<tr>
+				  <th>佃煮</th>
+				  <td>説明文を入れます。説明文を入れます。</td>
+			    </tr>
+				<tr>
+				  <th>明太子</th>
+				  <td>説明文を入れます。説明文を入れます。説明文を入れます。説明文を入れます。説明文を入れます。説明文を入れます。説明文を入れます。説明文を入れます。説明文を入れます。説明文を入れます。</td>
+			    </tr>
+				<tr>
+				  <th>鮭フレーク</th>
+				  <td>説明文を入れます。説明文を入れます。説明文を入れます。</td>
+			    </tr>
+				<tr>
+				  <th>キムチ</th>
+				  <td>説明文を入れます。</td>
+			    </tr>
+				<tr>
+				  <th>納豆卵黄</th>
+				  <td>説明文を入れます。説明文を入れます。説明文を入れます。説明文を入れます。説明文を入れます。</td>
+			    </tr>
+				<tr>
+				  <th>いかおくら</th>
+				  <td>説明文を入れます。説明文を入れます。説明文を入れます。説明文を入れます。説明文を入れます。説明文を入れます。説明文を入れます。説明文を入れます。</td>
+			    </tr>
+				<tr>
+				  <th>ねぎとろ</th>
+				  <td>説明文を入れます。説明文を入れます。</td>
+			    </tr>
+			  </tbody>
+		    </table>
+		</section>
+		<section class="contact" id="contact">
+			<h2><img src="img/title-contact.png" width="325" height="66" alt="アクセス"/></h2>
+			<p>〒164-8787 東京都中野区東中野4-2-3<br>
+			  専門学校東京テクニカルカレッジ テラハウスICA<br>
+		  	  TEL:03-××××-××××</p>
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.0410243624183!2d139.88288921550114!3d35.626715140566944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60187d03114737b3%3A0x41471d704ab72d25!2z5p2x5Lqs44OH44Kj44K644OL44O844K344O8!5e0!3m2!1sja!2sjp!4v1578378015370!5m2!1sja!2sjp" width="900" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			</div>
+		</section>
+		<p class="pagetop"><a href="#all"><img src="img/btn-pagetop.png" width="160" height="60" alt="page-top"/></a></p>
+    </main>
+		
+    <footer>
+      <p class="logo"><a href="lesson1.html"><img src="img/foot-logo.png" width="265" height="69" alt="フッターロゴ　cometubu"/></a></p>
+      <p><a href="lesson1.html">home</a>|<a href="#menu">menu</a>|<a href="#rice">rice</a>|<a href="#arrange">arrange menu</a>|<a href="#side">side menu</a>|<a href="#contact">contact</a><br></p>
+      <p>Copyright &copy; 職業訓練授業課題.All Rights Reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

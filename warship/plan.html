@@ -1,0 +1,451 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WARSHIP-作戦一覧</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="第二次世界大戦の日本の歴史を、5つの作戦（真珠湾攻撃、ミッドウェー海戦、第三次ソロモン海戦、レイテ沖海戦、坊ノ岬沖海戦）から学べるページです。" />
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.rollover.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="style-plan.css" rel="stylesheet" type="text/css">
+<link href="your-path-to-fontawesome/css/all.css" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+<script type="text/javascript">
+	$(document).ready(function() {
+  // #nav-toggleをクリックしたときの設定
+	$("#nav-toggle").on("click",function(){
+	
+		// ナビゲーションメニューを開閉
+		$("nav ul").slideToggle();
+	
+		// #nav-toggleにクラス名[open]を追加・削除
+		$(this).toggleClass("open");
+	
+	});
+	// ボタン押下時にナビゲーションが閉じるように設定
+	$('.navinner a[href]').on('click', function(event) {
+		// クリックイベントが発生したら実行
+        $('#nav-toggle').trigger('click');
+    });
+	  // ロールオーバーjavascript処理
+	  $(".nav a img").rollover("_over");
+	  // アコーディオン方式javascript処理
+	  $('.clickover').hide();
+    $('.underline').click(function() {
+      $(this).next().slideToggle();
+    });
+    // スクロールTop表示javascript処理
+    var scrollTop = $(".scrollTop");
+    $(window).scroll(function() {
+      var topPos = $(this).scrollTop();
+      if (topPos > 100) {
+        $(scrollTop).css("opacity", "1");
+      } else {
+        $(scrollTop).css("opacity", "0");
+      }
+    });
+    $(scrollTop).click(function() {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 800);
+      return false;
+    });
+   });
+</script>
+
+</head>
+
+<body>
+<div id="all">
+  <header class="clearfix">
+   <div class="h1search_inner clearfix">
+      <div class="inner">
+        <h1><a href="index.html"><img src="img/logo_n.png" width="300" height="100" alt="WARSHIP"/></a></h1>
+      </div>
+      <div class="search">
+        <form id="form" method="get" action="http://www.google.co.jp/search" target="_blank">
+          <input type="text" id="formtext" class="fs" name="q" size="20" maxlength="50" value="" placeholder="Googleで検索">
+          <input type="submit" id="formsubmit" class="fsu" name="btng" value="検索">
+          <input type="hidden" name="hl" value="ja">
+        </form>
+      </div>
+    </div>
+    <div class="nav">
+      <nav class="clearfix">
+        <div id="nav-toggle"><!--nav-toggleセレクタで設定している-->
+          <span></span><!--右上のメニューボタン1本目-->
+          <span></span><!--右上のメニューボタン2本目-->
+          <span></span><!--右上のメニューボタン3本目-->
+        </div>
+        <div class="navinner">
+          <ul>
+            <li><a href="index.html"><img src="img/btn_home.png" width="175" height="100" alt="HOME"/></a></li>
+            <li><a href="ship.html"><img src="img/btn_ship.png" width="175" height="100" alt="RELATE SHIP"/></a></li>
+            <li><a href="plan.html"><img src="img/btn_plan.png" width="175" height="100" alt="RELATE PLAN"/></a></li>
+            <li><a href="boss.html"><img src="img/btn_boss.png" width="175" height="100" alt="RELATE BOSS"/></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="acco">
+      <p class="caution"> リンクはすべて外部サイトへ飛びます。</p>
+      <section class="box">
+        <h2 id="pearl">真珠湾攻撃</h2>
+        <div class="click">
+          <div class="textinner">
+          	<table border="1">
+          	  <tr>
+          		  <th>作戦名称</th>
+          		  <td><a href="https://ja.wikipedia.org/?curid=20342" target="new">ハワイ海戦（布哇海戦）</a></td>
+          	  </tr>
+          	  <tr>
+				        <th>作戦期間</th>
+				        <td>日本時間1941年12月8日未明</td>
+          	  </tr>
+          	  <tr>
+				        <th>場所</th>
+				        <td>ハワイ州オアフ島真珠湾<br>
+                  <div class="gmap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47401577.7878242!2d-177.41912672458812!3d30.419948824412206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c006569de4312db%3A0xd77a90edb572a52d!2z44OR44O844Or44O744OP44O844OQ44O8!5e0!3m2!1sja!2sjp!4v1583199371986!5m2!1sja!2sjp" width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                  </div>
+                </td>
+          	  </tr>
+          	  <tr>
+				        <th>参戦国</th>
+				        <td>大日本帝国、アメリカ合衆国</td>
+          	  </tr>
+          	  <tr>
+				        <th>指揮官</th>
+                <td>
+                  <table width="200" border="1" class="ireko">
+                    <tbody>
+                    <tr>
+                      <th rowspan="2" scope="row">大日本帝国</th>
+                      <td><a href="https://ja.wikipedia.org/?curid=1943271" target="new">山本五十六</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://ja.wikipedia.org/?curid=30756" target="new">南雲忠一</a></td>
+                    </tr>
+                    <tr>
+                      <th rowspan="2" scope="row">アメリカ合衆国</th>
+                      <td><a href="https://ja.wikipedia.org/?curid=458297" target="new">ハズバンド・キンメル</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://ja.wikipedia.org/?curid=1099655" target="new">ウォルター・ショート</a></td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </td>
+          	  </tr>
+          	  <tr class="last">
+                <th>戦闘結果</th>
+                <td>日本勝利→太平洋戦争突入</td>
+          	  </tr>
+          	</table>
+            <p class="underline">簡単な概要説明はこちら▼</p>
+            <div class="clickover">
+              <p>ぶっちゃけた話、第二次世界大戦がはじまって初めてのだ日本帝国海軍の勝利となったが、相手方の基地に夜奇襲して勝利するというなんとも姑息な手段で勝利したと考えていたのがちょっと恥ずかしい…。</p>
+		        </div>
+          </div>
+        </div>
+      </section>
+      <section class="box">
+        <h2 id="mi">ミッドウェー海戦</h2>
+        <div class="click">
+          <div class="textinner">
+          	<table border="1">
+          	  <tr>
+                <th>作戦名称</th>
+                <td><a href="https://ja.wikipedia.org/?curid=27811" target="new">ミッドウェー海戦(MI作戦)</a></td>
+          	  </tr>
+          	  <tr>
+                <th>作戦期間</th>
+                <td>1942年6月5日 - 6月7日</td>
+          	  </tr>
+          	  <tr>
+                <th>場所</th>
+                <td>ハワイ諸島北西にあるミッドウェー島周辺<br>
+                  <div class="gmap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53440442.04120246!2d-179.12371847323033!3d35.16296161720947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7cb82296a25179db%3A0xfd7d890b7cdafe6b!2z44Of44OD44OJ44Km44Kn44O85bO2!5e0!3m2!1sja!2sjp!4v1583199237575!5m2!1sja!2sjp" width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                  </div>
+                </td>
+          	  </tr>
+          	  <tr>
+                <th>参戦国</th>
+                <td>大日本帝国、アメリカ合衆国</td>
+          	  </tr>
+          	  <tr>
+               <th>指揮官</th>
+               <td>
+                 <table width="200" border="1" class="ireko">
+                   <tbody>
+                    <tr>
+                      <th rowspan="4" scope="row">大日本帝国</th>
+                      <td><a href="https://ja.wikipedia.org/?curid=1943271" target="new">山本五十六</a></td>
+                    </tr>
+                      <tr>
+                      <td><a href="https://ja.wikipedia.org/?curid=30756" target="new">南雲忠一</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://ja.wikipedia.org/?curid=721499" target="new">近藤信竹</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://ja.wikipedia.org/?curid=78401" target="new">山口多聞</a></td>
+                    </tr>
+                    <tr>
+                      <th rowspan="2" scope="row">アメリカ合衆国</th>
+                      <td><a href="https://ja.wikipedia.org/?curid=458297" target="new">ハズバンド・キンメル</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://ja.wikipedia.org/?curid=1099655" target="new">ウォルター・ショート</a></td>
+                    </tr>
+                  </tbody>
+                 </table>
+                </td>
+          	  </tr>
+          	  <tr class="last">
+                <th>戦闘結果</th>
+                <td>アメリカ軍の勝利(日本海軍機動部隊の壊滅)</td>
+          	  </tr>
+          	</table>
+            <p class="underline">簡単な概要説明はこちら▼</p>
+            <div class="clickover">
+              <p>上記真珠湾攻撃の直後に開始した作戦だったが、日本人であれば聞いたことのある言葉が関わっている。<br>
+			        「行きはよいよい、帰りはこわい」というあれです。真珠湾攻撃で調子に乗った挙句、後ろから狙われて主力の戦力を失う大打撃。<br>
+			          ここで油断せずしっかり予測できていれば、現在の日本に大きく影響したのではないかと思います…</p>
+		        </div>
+          </div>
+        </div>
+      </section>
+      <section class="box">
+        <h2 id="solomon">第三次ソロモン海戦</h2>
+        <div class="click">
+          <div class="textinner">
+          	<table border="1">
+          	  <tr>
+                <th>作戦名称</th>
+                <td><a href="https://ja.wikipedia.org/?curid=72367" target="new">第三次ソロモン海戦(ガダルカナル島の戦い)</a></td>
+          	  </tr>
+          	  <tr>
+                <th>作戦期間</th>
+                <td>1942年11月12日 – 1942年11月15日</td>
+          	  </tr>
+          	  <tr>
+                <th>場所</th>
+                <td>
+                  <p>ガダルカナル島：オーストラリアより右斜め上周辺</p>
+                  <p>ソロモン諸島：ガダルカナル島を含めた周辺の島々<br>
+                    <div class="gmap">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64767677.31681589!2d163.24871050396598!3d7.778658064842882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6f286dc6a25fdd75%3A0xbc574c3a69b555b2!2z44Ks44OA44Or44Kr44OK44Or5bO2!5e0!3m2!1sja!2sjp!4v1583199870168!5m2!1sja!2sjp" width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                  </p>
+                </td>
+          	  </tr>
+          	  <tr>
+                <th>参戦国</th>
+                <td>大日本帝国、アメリカ合衆国、オーストラリア</td>
+          	  </tr>
+          	  <tr>
+                <th>指揮官</th>
+                <td>
+                  <table width="200" border="1" class="ireko">
+                   <tbody>
+                      <tr>
+                        <th rowspan="2" scope="row">大日本帝国</th>
+                        <td><a href="https://ja.wikipedia.org/?curid=725038" target="new">阿部弘毅</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="https://ja.wikipedia.org/?curid=721499" target="new">近藤信竹</a></td>
+                      </tr>
+                      <tr>
+                        <th rowspan="2" scope="row">アメリカ合衆国</th>
+                        <td><a href="https://ja.wikipedia.org/?curid=2681119" target="new">ダニエル・J・キャラハン</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="https://ja.wikipedia.org/?curid=1724666" target="new">ウィリス・A・リー</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+          	  </tr>
+          	  <tr class="last">
+                <th>戦闘結果</th>
+                <td>連合国軍の勝利</td>
+          	  </tr>
+          	</table>
+            <p class="underline">簡単な概要説明はこちら▼</p>
+            <div class="clickover">
+              <p>あまり聞いたことない作戦かとは思いますが、多くの戦艦や巡洋艦、駆逐艦はこのソロモン諸島の海底で眠っています。<br>
+			        近頃ポールアレン氏というアメリカの大富豪(去年他界してしまいましたが)が日本の軍艦の引き上げを行ってくれていますが、
+			        ほぼここから引き揚げてるんじゃないか？と思います。ざっと20隻弱はここにいます。</p>
+		        </div>
+          </div>
+        </div>
+      </section>
+		  <section class="box">
+        <h2 id="reite">レイテ沖海戦</h2>
+        <div class="click">
+          <div class="textinner">
+          	<table border="1">
+          	  <tr>
+                <th>作戦名称</th>
+                <td>
+                  <table border="1" class="ireko">
+                    <tr>
+                      <th><a href="https://ja.wikipedia.org/?curid=71549" target="new">レイテ沖海戦</a></th>
+                      <td><a href="https://ja.wikipedia.org/?curid=227583" target="new">シブヤン海海戦</a></td>
+                      <td><a href="https://ja.wikipedia.org/?curid=227584" target="new">スリガオ海峡海戦</a></td>
+                      <td><a href="https://ja.wikipedia.org/?curid=227587" target="new">エンガノ岬沖海戦</a></td>
+                      <td><a href="https://ja.wikipedia.org/?curid=291078" target="new">サマール沖海戦</a></td>
+                    </tr>
+                  </table>
+                </td>
+          	  </tr>
+          	  <tr>
+                <th>作戦期間</th>
+                <td>1944年10月20日 - 1944年10月25日</td>
+          	  </tr>
+          	  <tr>
+                <th>場所</th>
+                <td>フィリピン周辺海域<br>
+                  <div class="gmap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51693410.27130205!2d126.46714961225736!3d23.98620278650249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33079748942072a9%3A0x26e609fddaa0d714!2z44Os44Kk44OG5bO2!5e0!3m2!1sja!2sjp!4v1583200057916!5m2!1sja!2sjp" width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                  </div>
+                </td>
+          	  </tr>
+          	  <tr>
+                <th>参戦国</th>
+                <td>大日本帝国、アメリカ合衆国、オーストラリア</td>
+          	  </tr>
+          	  <tr>
+                <th>指揮官</th>
+                <td>
+                  <table width="200" border="1" class="ireko">
+                    <tbody>
+                      <tr>
+                        <th rowspan="6" scope="row">大日本帝国</th>
+                        <td><a href="https://ja.wikipedia.org/?curid=558794" target="new">栗田健男</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="https://ja.wikipedia.org/?curid=80869" target="new">小沢治三郎</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="https://ja.wikipedia.org/?curid=943050" target="new">西村祥治</a></td>
+                      </tr>
+                        <tr>
+                        <td><a href="https://ja.wikipedia.org/?curid=711017" target="new">志摩清英</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="https://ja.wikipedia.org/?curid=669320" target="new">福留繁</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="https://ja.wikipedia.org/?curid=252914" target="new">大西瀧治郎</a></td>
+                      </tr>
+                      <tr>
+                        <th rowspan="2" scope="row">アメリカ合衆国</th>
+                        <td><a href="https://ja.wikipedia.org/?curid=2557218" target="new">ウィリアム・ハルゼー</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="https://ja.wikipedia.org/?curid=669592" target="new">トーマス・C・キンケイド</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+          	  </tr>
+          	  <tr class="last">
+                <th>戦闘結果</th>
+                <td>連合国軍の勝利(日本側連合艦隊の壊滅)</td>
+          	  </tr>
+          	</table>
+            <p class="underline">簡単な概要説明はこちら▼</p>
+            <div class="clickover">
+              <p>ここもかなりの戦艦、しかもどでかい超弩級の戦艦、巡洋艦、駆逐艦が眠っている海域であり、イコール大敗した海域です。<br>
+			        武蔵、扶桑、山城、瑞鶴などなど、第二次世界大戦後半時の大日本帝国を支えた軍艦が多く眠っています。<br>
+			        このレイテ沖は現在で言うとフィリピンのあたり。かなり近くまで追い込まれていたことが伺えますね…</p>
+		        </div>
+          </div>
+        </div>
+      </section>
+      <section class="box">
+        <h2 id="bou">坊ノ岬沖海戦</h2>
+        <div class="click">
+          <div class="textinner">
+          	<table border="1">
+          	  <tr>
+                <th>作戦名称</th>
+                <td><a href="https://ja.wikipedia.org/?curid=633825" target="new">坊ノ岬沖海戦(天一号作戦)</a></td>
+          	  </tr>
+          	  <tr>
+                <th>作戦期間</th>
+                <td>1945年4月7日</td>
+          	  </tr>
+          	  <tr>
+                <th>場所</th>
+                <td>鹿児島県沖の九州南方海域<br>
+                  <div class="gmap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13442165.39242557!2d124.72610451132421!3d34.660290668580494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDQwJzAwLjAiTiAxMjjCsDA0JzAwLjAiRQ!5e0!3m2!1sja!2sjp!4v1583200852053!5m2!1sja!2sjp" width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                  </div>
+                </td>
+          	  </tr>
+          	  <tr>
+                <th>参戦国</th>
+                <td>大日本帝国<span></span>アメリカ合衆国</td>
+          	  </tr>
+              <tr>
+                <th>指揮官</th>
+                <td>
+                  <table width="200" border="1" class="ireko">
+                  <tbody>
+                    <tr>
+                      <th rowspan="2" scope="row">大日本帝国</th>
+                      <td><a href="https://ja.wikipedia.org/?curid=377738" target="new">伊藤整一</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://ja.wikipedia.org/?curid=909015" target="new">古村啓蔵</a></td>
+                    </tr>
+                    <tr class="last">
+                      <th scope="row">アメリカ合衆国</th>
+                      <td><a href="https://ja.wikipedia.org/?curid=617739" target="new">マーク・ミッチャー</a></td>
+                    </tr>
+                  </tbody>
+                  </table>
+                </td>
+              </tr>
+          	  <tr class="last">
+                <th>戦闘結果</th>
+                <td>連合軍の勝利</td>
+          	  </tr>
+          	</table>
+            <p class="underline">簡単な概要説明はこちら▼</p>
+            <div class="clickover">
+              <p>この作戦は知らない方が多いかとは思いますが、「宇宙戦艦」と言われれば浮かぶあの「大和」が沈んだ作戦です。<br>
+			        しかも場所は鹿児島の下あたりの海域に眠っており、艦内の装備品などは広島県呉市の大和ミュージアムさんで見ることができます。<br>
+			        レイテ沖はまだ国外でしたが、これは鹿児島。当時の戦況はかなり過酷なものであったことが伺えるかと思います。当時建造されて間もなかった「大和」さんですが、昨年「アルキメデスの大戦」という映画でも大きく取り上げられているかと思います。おすすめです！！</p>
+		        </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="stop" class="scrollTop">
+  		<a href="">Top</a>
+	  </div>
+  </main>
+  <footer>
+    <div class="inner">
+      <ul class="link">
+        <li><a href="index.html">home</a></li>
+        <li><a href="ship.html">Relate Ship</a></li>
+        <li><a href="plan.html">Relate Plan</a></li>
+        <li><a href="boss.html">Relate Boss</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

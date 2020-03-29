@@ -1,0 +1,513 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WARSHIP-軍艦一覧</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="第二次世界大戦で使われていた大日本帝国海軍の軍艦をまとめました。こちらのページに記載されている軍艦のほとんどは、現在の自衛隊でいう護衛艦の名前としても使われているものが多いです。" />
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.rollover.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="style-ship.css" rel="stylesheet" type="text/css">
+<link href="your-path-to-fontawesome/css/all.css" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+<script type="text/javascript">
+  $(document).ready(function() {
+  // #nav-toggleをクリックしたときの設定
+	$("#nav-toggle").on("click",function(){
+	
+		// ナビゲーションメニューを開閉
+		$("nav ul").slideToggle();
+	
+		// #nav-toggleにクラス名[open]を追加・削除
+		$(this).toggleClass("open");
+	
+	});
+	// ボタン押下時にナビゲーションが閉じるように設定
+	$('.navinner a[href]').on('click', function(event) {
+		// クリックイベントが発生したら実行
+        $('#nav-toggle').trigger('click');
+    });
+	  // ロールオーバー
+	  $(".nav a img").rollover("_over");
+	  // アコーディオン方式javascript処理
+	  $('.clickover').hide();
+    $('.underline').click(function() {
+      $(this).next().slideToggle();
+    });
+    // スクロールTop表示javascript処理
+    var scrollTop = $(".scrollTop");
+    $(window).scroll(function() {
+      var topPos = $(this).scrollTop();
+      if (topPos > 100) {
+        $(scrollTop).css("opacity", "1");
+      } else {
+        $(scrollTop).css("opacity", "0");
+      }
+    });
+    $(scrollTop).click(function() {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 800);
+      return false;
+    });
+  });
+</script>
+
+</head>
+
+<body>
+<div id="all">
+  <header class="clearfix">
+    <div class="h1search_inner clearfix">
+      <div class="inner">
+        <h1><a href="index.html"><img src="img/logo_n.png" width="300" height="100" alt="WARSHIP"/></a></h1>
+      </div>
+      <div class="search">
+        <form id="form" method="get" action="http://www.google.co.jp/search" target="_blank">
+          <input type="text" id="formtext" class="fs" name="q" size="20" maxlength="50" value="" placeholder="Googleで検索">
+          <input type="submit" id="formsubmit" class="fsu" name="btng" value="検索">
+          <input type="hidden" name="hl" value="ja">
+        </form>
+      </div>
+    </div>
+    <div class="nav">
+		  <nav class="clearfix">
+        <div id="nav-toggle"><!--nav-toggleセレクタで設定している-->
+          <span></span><!--右上のメニューボタン1本目-->
+          <span></span><!--右上のメニューボタン2本目-->
+          <span></span><!--右上のメニューボタン3本目-->
+        </div>
+        <div class="navinner">
+          <ul>
+            <li><a href="index.html"><img src="img/btn_home.png" width="175" height="100" alt="HOME"/></a></li>
+            <li><a href="ship.html"><img src="img/btn_ship.png" width="175" height="100" alt="RELATE SHIP"/></a></li>
+            <li><a href="plan.html"><img src="img/btn_plan.png" width="175" height="100" alt="RELATE PLAN"/></a></li>
+            <li><a href="boss.html"><img src="img/btn_boss.png" width="175" height="100" alt="RELATE BOSS"/></a></li>
+          </ul>
+        </div>
+		  </nav>
+		</div>
+  </header>
+  <main>
+    <div class="acco">
+      <p class="caution"> リンクはすべて外部サイトへ飛びます。</p>
+      <section class="box">
+        <h2>戦艦</h2>
+        <div class="click">
+          <div class="textinner">
+		        <p>軍艦の中でも随一の最大火力を誇る軍艦。しかし大きすぎるため運用コストもかかりやすく、かつ財力のない大日本帝国ではその力を発揮できる機会は少なかった。</p>
+            <p class="underline">戦艦一覧▼</p>
+            <div class="clickover">
+              <table width="200" border="1">
+                <tbody>
+                <tr>
+                  <th>第一戦隊</th>
+                  <td><a href="https://ja.wikipedia.org/?curid=6205" target="new">大和</a>、<a href="https://ja.wikipedia.org/?curid=24724" target="new">長門</a>、<a href="https://ja.wikipedia.org/?curid=45232" target="new">陸奥</a></td>
+                </tr>
+                <tr>
+                  <th>第二戦隊</th>
+                  <td><a href="https://ja.wikipedia.org/?curid=71540" target="new">伊勢</a>、<a href="https://ja.wikipedia.org/?curid=71542" target="new">日向</a>、<a href="https://ja.wikipedia.org/?curid=71535" target="new">扶桑</a>、<a href="https://ja.wikipedia.org/?curid=71536" target="new">山城</a></td>
+                </tr>
+                <tr>
+                  <th>第三戦隊</th>
+                  <td><a href="https://ja.wikipedia.org/?curid=71361" target="new">金剛</a>、<a href="https://ja.wikipedia.org/?curid=71370" target="new">榛名</a>、<a href="https://ja.wikipedia.org/?curid=71369" target="new">比叡</a>、<a href="https://ja.wikipedia.org/?curid=71371" target="new">霧島</a></td>
+                </tr>
+                <tr class="last">
+                  <th>第四航空戦隊</th>
+                  <td><a href="https://ja.wikipedia.org/?curid=71540" target="new">伊勢</a>、<a href="https://ja.wikipedia.org/?curid=71542" target="new">日向</a></td>
+                </tr>
+                </tbody>
+              </table>
+		        </div>
+          </div>
+        </div>
+        
+      </section>
+      <section class="box">
+        <h2>空母</h2>
+        <div class="click">
+          <div class="textinner">
+		        <p>艦載機を搭載し、発着艦しながら敵艦載機を打ち落とせる高性能な軍艦。中でも日本の艦載機は世界トップレベルの攻撃力を持っていたためか、第二次世界大戦序盤で空母の建造を禁じられてしまった過去がある。</p>
+		        <p>しかし資源大国ではなかったため、片道切符の「神風特攻隊」なるものが結成された過去がある。</p>
+		         <p class="underline">空母一覧▼</p>
+              <div class="clickover">
+                <table width="200" border="1">
+                 <tbody>
+                   <tr>
+                   <th><a href="https://ja.wikipedia.org/?curid=727242" target="new">第一航空戦隊</a></th>
+                   <td>
+                     <a href="https://ja.wikipedia.org/?curid=720599" target="new">赤城</a>、
+                     <a href="https://ja.wikipedia.org/?curid=24355" target="new">加賀</a>
+                   </td>
+                   </tr>
+                   <tr>
+                   <th><a href="https://ja.wikipedia.org/?curid=726676" target="new">第二航空戦隊</a></th>
+                   <td>
+                     <a href="https://ja.wikipedia.org/?curid=31091" target="new">蒼龍</a>、
+                     <a href="https://ja.wikipedia.org/?curid=71553" target="new">飛龍</a>
+                   </td>
+                   </tr>
+                   <tr>
+                   <th><a href="https://ja.wikipedia.org/?curid=2287019" target="new">第三航空戦隊</a></th>
+                   <td>
+                     <a href="https://ja.wikipedia.org/?curid=31094" target="new">瑞鶴</a>、
+                     <a href="https://ja.wikipedia.org/?curid=83761" target="new">千代田</a>、
+                     <a href="https://ja.wikipedia.org/?curid=82124" target="new">千歳</a>、
+                     <a href="https://ja.wikipedia.org/?curid=725748" target="new">瑞鳳</a>
+                   </td>
+                   </tr>
+                   <tr>
+                   <th><a href="https://ja.wikipedia.org/?curid=73430" target="new">第五航空戦隊</a></th>
+                   <td>
+                     <a href="https://ja.wikipedia.org/?curid=31094" target="new">瑞鶴</a>、
+                     <a href="https://ja.wikipedia.org/?curid=31093" target="new">翔鶴</a>
+                   </td>
+                   </tr>
+                   <tr>
+                   <th><a href="https://ja.wikipedia.org/?curid=868046" target="new">第一一航空戦隊</a></th>
+                   <td><a href="https://ja.wikipedia.org/?curid=82124" target="new">千歳</a></td>
+                   </tr>
+                   <tr>
+                   <th>空母隊</th>
+                   <td><a href="https://ja.wikipedia.org/?curid=72898" target="new">鳳翔</a></td>
+                   </tr>
+                   <tr class="last">
+                   <th>特務隊</th>
+                   <td><a href="https://ja.wikipedia.org/?curid=83761" target="new">千代田</a></td>
+                   </tr>
+                 </tbody>
+                </table>
+              </div>
+          </div>
+        </div>
+        
+      </section>
+      <section class="box">
+        <h2>重巡洋艦</h2>
+        <div class="click">
+          <div class="textinner">
+          <p>戦艦よりも火力は劣るが、運用コストは比較的軽く、かつ夜に戦闘する通称「夜戦」を得意とする軍艦である。魚雷や砲撃はもちろん、対艦載機への攻撃も優れているため各攻撃に特化した軍艦に改造されることが多い。</p>
+          <p class="abc underline">重巡洋艦一覧▼</p>
+          <div class="clickover">
+            <table width="200" border="1">
+             <tbody>
+              <tr>
+                <th>第二戦隊</th>
+                <td><a href="https://ja.wikipedia.org/?curid=73287" target="new">最上</a></td>
+              </tr>
+              <tr>
+                <th>第四戦隊</th>
+                <td><a href="https://ja.wikipedia.org/?curid=73270" target="new">愛宕</a>、<a href="https://ja.wikipedia.org/?curid=73269" target="new">高雄</a>、<a href="https://ja.wikipedia.org/?curid=73272" target="new">鳥海</a></td>
+              </tr>
+              <tr>
+                <th>第五戦隊</th>
+                <td><a href="https://ja.wikipedia.org/?curid=73281" target="new">妙高</a>、<a href="https://ja.wikipedia.org/?curid=73284" target="new">羽黒</a></td>
+              </tr>
+              <tr>
+                <th>第七戦隊</th>
+                <td><a href="https://ja.wikipedia.org/?curid=73289" target="new">三隈</a>、<a href="https://ja.wikipedia.org/?curid=73287" target="new">最上</a>、<a href="https://ja.wikipedia.org/?curid=73290" target="new">鈴谷</a>、<a href="https://ja.wikipedia.org/?curid=73291" target="new">熊野</a>、<a href="https://ja.wikipedia.org/?curid=73271" target="new">摩耶</a></td>
+              </tr>
+              <tr>
+                <th>第八戦隊</th>
+                <td><a href="https://ja.wikipedia.org/?curid=73293" target="new">利根</a>、<a href="https://ja.wikipedia.org/?curid=73294" target="new">筑摩</a></td>
+              </tr>
+              <tr>
+                <th>第一六戦隊</th>
+                <td><a href="https://ja.wikipedia.org/?curid=73278" target="new">青葉</a></td>
+              </tr>
+              <tr>
+                <th>第二一戦隊</th>
+                <td><a href="https://ja.wikipedia.org/?curid=73282" target="new">那智</a>、<a href="https://ja.wikipedia.org/?curid=73283" target="new">足柄</a></td>
+              </tr>
+              <tr class="last">
+                <th><a href="https://ja.wikipedia.org/?curid=967388" target="new">第八艦隊</a></th>
+                <td><a href="https://ja.wikipedia.org/?curid=73272" target="new">鳥海</a>、<a href="https://ja.wikipedia.org/?curid=73279" target="new">衣笠</a></td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+          </div>
+        </div>
+      </section>
+		  <section class="box">
+        <h2>軽巡洋艦</h2>
+        <div class="click">
+          <div class="textinner">
+          <p>重巡洋艦よりも運用コストが軽く、かつ小回りも効くため、偵察などの敵の艦隊編成を確認することが多かった。
+          	火力よりも対艦載機への攻撃が多く、魚雷攻撃にも優れていた。駆逐艦など小さな軍艦の合同演習で指揮をとる立場にある。</p>
+          <p class="underline">軽巡洋艦一覧▼</p>
+          <div class="clickover">
+            <table width="200" border="1">
+              <tbody>
+              <tr>
+                <th><a href="https://ja.wikipedia.org/?curid=2628254" target="new">第一水雷戦隊</a></th>
+                <td><a href="https://ja.wikipedia.org/?curid=1048861" target="new">阿武隈</a></td>
+              </tr>
+              <tr>
+                <th><a href="https://ja.wikipedia.org/?curid=72368" target="new">第二水雷戦隊</a></th>
+                <td><a href="https://ja.wikipedia.org/?curid=922850" target="new">神通</a>、<a href="https://ja.wikipedia.org/?curid=390041" target="new">五十鈴</a>、<a href="https://ja.wikipedia.org/?curid=325432" target="new">能代</a></td>
+              </tr>
+              <tr>
+                <th><a href="https://ja.wikipedia.org/?curid=2628254" target="new">第三水雷戦隊</a></th>
+                <td><a href="https://ja.wikipedia.org/?curid=90582" target="new">川内</a></td>
+              </tr>
+              <tr>
+                <th><a href="https://ja.wikipedia.org/?curid=2628254" target="new">第四水雷戦隊</a></th>
+                <td><a href="https://ja.wikipedia.org/?curid=1047968" target="new">由良</a></td>
+              </tr>
+              <tr>
+                <th>第七戦隊</th>
+                <td><a href="https://ja.wikipedia.org/?curid=74517" target="new">天龍</a></td>
+              </tr>
+              <tr>
+                <th>第九戦隊</th>
+                <td><a href="https://ja.wikipedia.org/?curid=74524" target="new">北上</a>、<a href="https://ja.wikipedia.org/?curid=673287" target="new">大井</a></td>
+              </tr>
+              <tr>
+                <th>第十戦隊</th>
+                <td><a href="https://ja.wikipedia.org/?curid=88190" target="new">長良</a>、<a href="https://ja.wikipedia.org/?curid=311882" target="new">矢矧</a></td>
+              </tr>
+              <tr>
+                <th>第一六戦隊</th>
+                <td><a href="https://ja.wikipedia.org/?curid=1048659" target="new">鬼怒</a></td>
+              </tr>
+              <tr>
+                <th>巡洋艦戦隊</th>
+                <td><a href="https://ja.wikipedia.org/?curid=624968" target="new">多摩</a>、<a href="https://ja.wikipedia.org/?curid=390041" target="new">五十鈴</a></td>
+              </tr>
+              <tr class="last">
+                <th>第一駆逐連隊</th>
+                <td><a href="https://ja.wikipedia.org/?curid=82130" target="new">大淀</a></td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+          </div>
+        </div>
+      </section>
+      <section class="box">
+        <h2>駆逐艦</h2>
+        <div class="click">
+          <div class="textinner">
+            <p>建造のしやすさと運用コストの低さから多くの作戦において活躍した軍艦が多く見受けられる種類。
+          	沈没寸前の戦艦や空母を魚雷処分するために建造される駆逐艦も存在するくらい数が多いが、約9割が太平洋に沈没している。</p>
+          	<p class="underline">駆逐艦一覧▼</p>
+            <div class="clickover">
+			        <p>※下記海戦に出撃した駆逐艦のみをまとめています。</p>
+              <ul class="list">
+                <li><a href="plan.html#pearl">真珠湾攻撃</a></li>
+                <li><a href="plan.html#mi">ミッドウェー海戦</a></li>
+                <li><a href="plan.html#solomon">第三次ソロモン海戦</a></li>
+                <li><a href="plan.html#reite">レイテ沖海戦</a></li>
+                <li><a href="plan.html#bou">坊ノ岬沖海戦</a></li>
+              </ul>
+              <table width="200" border="1">
+                <tbody>
+                  <tr>
+                    <th>第二駆逐隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=1086536" target="new">五月雨</a>、<a href="https://ja.wikipedia.org/?curid=1085484" target="new">春雨</a>、<a href="https://ja.wikipedia.org/?curid=1083758" target="new">村雨</a>、<a href="https://ja.wikipedia.org/?curid=1084894" target="new">夕立</a>、<a href="https://ja.wikipedia.org/?curid=1627215" target="new">早霜</a>、<a href="https://ja.wikipedia.org/?curid=1627257" target="new">秋霜</a></td>
+                  </tr>
+                  <tr>
+                    <th>第四駆逐隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=1243096" target="new">嵐</a>、<a href="https://ja.wikipedia.org/?curid=1313127" target="new">野分</a>、<a href="https://ja.wikipedia.org/?curid=1313960" target="new">萩風</a>、<a href="https://ja.wikipedia.org/?curid=1313980" target="new">舞風</a>、<a href="https://ja.wikipedia.org/?curid=1119085" target="new">山雲</a>、<a href="https://ja.wikipedia.org/?curid=1117105" target="new">満潮</a>、<a href="https://ja.wikipedia.org/?curid=1118477" target="new">朝雲</a></td>
+                  </tr>
+                  <tr>
+                    <th>第六駆逐隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=1167465" target="new">暁</a>、<a href="https://ja.wikipedia.org/?curid=327218" target="new">雷</a>、<a href="https://ja.wikipedia.org/?curid=1089380" target="new">電</a></td>
+                  </tr>
+                  <tr>
+                    <th>第七駆逐隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=1586827" target="new">曙</a>、<a href="https://ja.wikipedia.org/?curid=1588263" target="new">潮</a></td>
+                  </tr>
+                  <tr>
+                    <th>第八駆逐隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=1116282" target="new">朝潮</a>、<a href="https://ja.wikipedia.org/?curid=1117693" target="new">荒潮</a></td>
+                  </tr>
+                  <tr>
+                    <th>第九駆逐隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=1118477" target="new">朝雲</a>、<a href="https://ja.wikipedia.org/?curid=1123951" target="new">峯雲</a>、<a href="https://ja.wikipedia.org/?curid=1119518" target="new">夏雲</a>、<a href="https://ja.wikipedia.org/?curid=1164000" target="new">三日月</a></td>
+                  </tr>
+                  <tr>
+                    <th>第十駆逐隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=1610852" target="new">風雲</a>、<a href="https://ja.wikipedia.org/?curid=1610545" target="new">夕雲</a>、<a href="https://ja.wikipedia.org/?curid=1610630" target="new">巻雲</a>、<a href="https://ja.wikipedia.org/?curid=1314014" target="new">秋雲</a>、<a href="https://ja.wikipedia.org/?curid=1117105" target="new">満潮</a></td>
+                  </tr>
+                  <tr>
+                    <th>第一一駆逐隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=1065829" target="new">吹雪</a>、<a href="https://ja.wikipedia.org/?curid=1581488" target="new">白雪</a>、<a href="https://ja.wikipedia.org/?curid=1581777" target="new">初雪</a>、<a href="https://ja.wikipedia.org/?curid=1582360" target="new">叢雲</a></td>
+                  </tr>
+                  <tr>
+                    <th>第一五駆逐隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=1129807" target="new">親潮</a>、<a href="https://ja.wikipedia.org/?curid=1129467" target="new">黒潮</a>、<a href="https://ja.wikipedia.org/?curid=1219703" target="new">早潮</a>、<a href="https://ja.wikipedia.org/?curid=1299054" target="new">陽炎</a></td>
+                  </tr>
+                  <tr>
+                    <th>第一六駆逐隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=309393" target="new">雪風</a>、<a href="https://ja.wikipedia.org/?curid=1190506" target="new">時津風</a>、<a href="https://ja.wikipedia.org/?curid=1219822" target="new">天津風</a>、<a href="https://ja.wikipedia.org/?curid=1219788" target="new">初風</a></td>
+                  </tr>
+                  <tr>
+                    <th>第一七駆逐隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=1312677" target="new">谷風</a>、<a href="https://ja.wikipedia.org/?curid=1311845" target="new">浦風</a>、<a href="https://ja.wikipedia.org/?curid=1312617" target="new">浜風</a>、<a href="https://ja.wikipedia.org/?curid=1312560" target="new">磯風</a>、<a href="https://ja.wikipedia.org/?curid=309393" target="new">雪風</a></td>
+                  </tr>
+                  <tr>
+                    <th>第一八駆逐隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=1126963" target="new">陽炎</a>、<a href="https://ja.wikipedia.org/?curid=1127572" target="new">不知火</a>、<a href="https://ja.wikipedia.org/?curid=1124584" target="new">霞</a>、<a href="https://ja.wikipedia.org/?curid=1125843" target="new">霰</a></td>
+                  </tr>
+                  <tr>
+                    <th>第一九駆逐隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=1583378" target="new">磯波</a>、<a href="https://ja.wikipedia.org/?curid=1583456" target="new">浦波</a>、<a href="https://ja.wikipedia.org/?curid=1583716" target="new">敷波</a>、<a href="https://ja.wikipedia.org/?curid=651402" target="new">綾波</a></td>
+                  </tr>
+                  <tr>
+                    <th>第二〇駆逐隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=328613" target="new">天霧</a>、<a href="https://ja.wikipedia.org/?curid=1583823" target="new">朝霧</a>、<a href="https://ja.wikipedia.org/?curid=1584924" target="new">夕霧</a>、<a href="https://ja.wikipedia.org/?curid=1583158" target="new">白雲</a></td>
+                  </tr>
+                  <tr>
+                    <th>第二一駆逐隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=1064809" target="new">初春</a>、<a href="https://ja.wikipedia.org/?curid=1065393" target="new">若葉</a>、<a href="https://ja.wikipedia.org/?curid=1066633" target="new">初霜</a>、<a href="https://ja.wikipedia.org/?curid=1627187" target="new">朝霜</a>、<a href="" target="https://ja.wikipedia.org/?curid=1124584">霞</a></td>
+                  </tr>
+                  <tr>
+                    <th>第二四駆逐隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=1087023" target="new">海風</a>、<a href="https://ja.wikipedia.org/?curid=1087981" target="new">江風</a>、<a href="https://ja.wikipedia.org/?curid=1088188" target="new">涼風</a></td>
+                  </tr>
+                  <tr>
+                    <th>第二七駆逐隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=1076734" target="new">夕暮</a>、<a href="https://ja.wikipedia.org/?curid=1080931" target="new">白露</a>、<a href="https://ja.wikipedia.org/?curid=1082426" target="new">時雨</a></td>
+                  </tr>
+                  <tr>
+                    <th>第三〇駆逐隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=1431965" target="new">望月</a></td>
+                  </tr>
+                  <tr>
+                    <th>第三一駆逐隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=1626457" target="new">高波</a>、<a href="https://ja.wikipedia.org/?curid=1612473" target="new">巻波</a>、<a href="https://ja.wikipedia.org/?curid=1611332" target="new">長波</a>、<a href="https://ja.wikipedia.org/?curid=1627072" target="new">岸波</a>、<a href="https://ja.wikipedia.org/?curid=1627041" target="new">沖波</a>、<a href="https://ja.wikipedia.org/?curid=1627187" target="new">朝霜</a></td>
+                  </tr>
+                  <tr>
+                    <th>第三二駆逐隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=1627004" target="new">浜波</a>、<a href="https://ja.wikipedia.org/?curid=1626725" target="new">藤波</a></td>
+                  </tr>
+                  <tr>
+                    <th>第三四駆逐隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=1600124" target="new">秋風</a></td>
+                  </tr>
+                  <tr>
+                    <th>第四十一駆逐隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=1375062" target="new">霜月</a>、<a href="https://ja.wikipedia.org/?curid=1083692" target="new">冬月</a>、<a href="https://ja.wikipedia.org/?curid=1336817" target="new">涼月</a></td>
+                  </tr>
+                  <tr>
+                    <th>第四十三駆逐隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=2853839" target="new">榧</a>、<a href="https://ja.wikipedia.org/?curid=2853835" target="new">槇</a>、<a href="https://ja.wikipedia.org/?curid=2853832" target="new">桐</a></td>
+                  </tr>
+                  <tr>
+                    <th>第五十二駆逐隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=2853836" target="new">杉</a>、<a href="https://ja.wikipedia.org/?curid=2853831" target="new">桑</a></td>
+                  </tr>
+                  <tr class="last">
+                    <th>第六十一駆逐隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=1092151" target="new">秋月</a>、<a href="https://ja.wikipedia.org/?curid=1057077" target="new">照月</a>、<a href="https://ja.wikipedia.org/?curid=1362383" target="new">初月</a>、<a href="https://ja.wikipedia.org/?curid=1362409" target="new">若月</a></td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="abc">その他所属している戦隊</p>
+              <table border="1">
+                <tbody>
+                  <tr>
+                    <th>第三航空戦隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=1603403" target="new">夕風</a></td>
+                  </tr>
+                  <tr>
+                    <th>第二水雷戦隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=2853806" target="new">島風</a></td>
+                  </tr>
+                  <tr class="last">
+                    <th>第三十一戦隊</th>
+                    <td><a href="https://ja.wikipedia.org/?curid=1327433" target="new">花月</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="box">
+        <h2>海防艦</h2>
+        <div class="click">
+          <div class="textinner">
+          	<p>第二次世界大戦前までは第一線から引いた戦艦や巡洋艦を指し、主に警備にあたった。
+          	しかし1942年より海軍軍艦が変更され、対潜水艦の哨戒と合わせて船団護衛を行う艦を指している。
+          	戦争が始まってからは軍艦の不足が問題になったことから新しく建造を始めた資料が残っている。</p>
+          	<p class="underline">海防艦一覧▼</p>
+            <div class="clickover">
+              <ul>
+                <li>22号</li>
+                <li>29号</li>
+                <li>31号</li>
+                <li>33号</li>
+                <li>43号</li>
+                <li>132号</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="box">
+        <h2>潜水艦</h2>
+        <div class="click">
+          <div class="textinner">
+            <p>特に魚雷攻撃に特化しており、おおよその時間を海の中で過ごすため敵艦から気づかれないまま攻撃が可能となった。
+              第二次世界大戦後半では魚雷に使用される火薬不足と運用コストを鑑み、回天と呼ばれる特攻兵器が作られた。
+              詳細な内容は省くが、いうなれば回天＝"人間魚雷"と捉えられている。詳しくは勉強してね！</p>
+            <p class="underline">潜水艦一覧▼</p>
+            <div class="clickover">
+              <p>※改修中です</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="box">
+        <h2>その他</h2>
+        <div class="click">
+          <div class="textinner">
+            <div class="dfg">
+              <table border="1">
+                <tr>
+                  <th>補給艦</th>
+                  <td>軍艦の運用に石油が多く必要なため、道中補給なども兼ねている。</td>
+                  </tr>
+                <tr>
+                  <th>輸送船</th>
+                  <td>人員と資源双方を輸送する。</td>
+                  </tr>
+                <tr class="last">
+                  <th>掃海艇</th>
+                  <td>対潜水艦への攻撃兵器である機雷の掃海を行う。<br>
+                    </td>
+                  </tr>
+              </table>
+            </div>
+            <p class="underline">補給艦、輸送船、掃海艇一覧▼</p>
+            <div class="clickover">
+              <p>※改修中です</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="stop" class="scrollTop">
+  		<a href="">Top</a>
+	  </div>
+  </main>
+  <footer>
+    <div class="inner">
+      <ul class="link">
+        <li><a href="index.html">home</a></li>
+        <li><a href="ship.html">Relate Ship</a></li>
+        <li><a href="plan.html">Relate Plan</a></li>
+        <li><a href="boss.html">Relate Boss</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

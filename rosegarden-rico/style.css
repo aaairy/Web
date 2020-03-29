@@ -1,0 +1,201 @@
+@charset "utf-8";
+p, h1, h2, h3, ul, ol, body {
+	padding: 0;
+	margin: 0;
+}
+img {
+	border-style: none;
+	vertical-align: top;
+}
+div:after,
+ul:after,
+section:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#wrapper {
+	width: 100%;
+	color: #666633;
+	font-family: "メイリオ", Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+	line-height: 1.5;
+}
+
+.header {
+	padding: 2px 0;
+	background-color: #E71E28;
+	overflow: hidden;
+}
+.header .inner {
+	margin: 0 auto;
+	width: 1000px;
+}
+.header .inner h1 {
+	float: left;
+}
+.gnav {
+	background-color: #A6937C;
+}
+.header .inner p {
+	padding: 30px 0 0;
+	float: right;
+}
+.gnav ul {
+	margin: 0 auto;
+	width: 1000px;
+	padding: 0;
+	list-style-type: none;
+}
+.gnav ul li {
+	float: left;
+}
+.content {
+	padding: 20px 0 0;
+	display: block;
+	clear: both;
+}
+.mainimage {
+	margin: 0 auto;
+	width: 1000px;
+}
+.mainimage td {
+	padding: 0;
+	border-style: none;
+}
+
+.menu {
+	margin: 0 auto;
+	padding: 0 0 20px;
+	width: 1000px;
+	overflow: hidden;
+}
+.menu .box {
+	width: 290px;
+	margin: 0 65px 0 0;
+	float: left;
+}
+.menu .boxend {
+	width: 290px;
+	float: left;
+}
+.menu .box h3 {
+	padding: 0 0 10px;
+	text-align: center;
+}
+.menu .boxend h3 {
+	padding: 0 0 10px;
+	text-align: center;
+}
+.wedding {
+	clear: both;
+	background-color: #E71E28;
+	color: #FFFFFF;
+	padding: 30px 0;
+	text-align: center;
+}
+.wedding p {
+	font-size: 1.8em;
+}
+
+table.index {
+	margin: 0 auto;
+	width: 1000px;
+	border-collapse: collapse;
+}
+.gotopIndex {
+	padding: 20px 0 0;
+	text-align: right;
+	margin: 0 auto;
+	width: 1000px;
+	clear: both;
+}
+
+.footer {
+	background-color: #313131;
+	text-align: center;
+	padding-top: 20px;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 100px;
+	color: #FFFFFF;
+}
+.footer a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.footer a:hover {
+	color: #FFED00;
+}
+h2 {
+	text-align: center;
+	font-size: 2.2em;
+	clear: both;
+	margin: 20px 0;
+	font-weight: normal;
+}
+h3 {
+	margin: 20px 0;
+	padding: 20px 0;
+	font-size: 1.6em;
+	font-weight: normal;
+}
+
+p {
+	padding: 0 0 1em;
+}
+table {
+	width: 670px;
+	border-collapse: collapse;
+
+}
+th {
+	padding: 15px;
+	border: 1px solid #486a00;
+	background-color: #cce198;
+	white-space: nowrap;
+}
+td {
+	padding: 15px;
+	border: 1px solid #486a00;
+}
+ul  {
+	padding: 0 0 0 30px;
+}
+
+.main {
+	width: 670px;
+	float: right;
+}
+.banner {
+	width: 240px;
+	padding: 20px 30px;
+	float: left;
+}
+.banner p {
+	padding: 0 0 20px;
+}
+
+.subcontent {
+	margin: 0 auto;
+	width: 1000px;
+	background: #e4dcd0;
+	background: -moz-linear-gradient(left,  #e4dcd0 0px, #e4dcd0300px, #ffffff 300px, #ffffff 1000px);
+	background: -webkit-linear-gradient(left,  #e4dcd0 0px,#e4dcd0 300px,#ffffff 300px,#ffffff 1000px);
+	background: linear-gradient(to right,  #e4dcd0 0px,#e4dcd0 300px,#ffffff 300px,#ffffff 1000px);
+	clear: both;
+}
+.list {
+	padding: 0 0 5px;
+}
+
+.list p {
+	padding-top: 0;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 20px;
+	float: left;
+}
+.red {
+	color: #FF0004;
+	font-weight: bold;
+}

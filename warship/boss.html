@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WARSHIP-司令長官一覧</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="第二次世界大戦の大日本帝国の海を支えた司令長官たちを、作戦ページで紹介した5つの作戦からまとめたページとなっています。" />
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.rollover.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css">
+<link href="style-boss.css" rel="stylesheet" type="text/css">
+<link href="your-path-to-fontawesome/css/all.css" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  <script type="text/javascript">
+   $(document).ready(function() {
+  // #nav-toggleをクリックしたときの設定
+	$("#nav-toggle").on("click",function(){
+	
+		// ナビゲーションメニューを開閉
+		$("nav ul").slideToggle();
+	
+		// #nav-toggleにクラス名[open]を追加・削除
+		$(this).toggleClass("open");
+	
+	});
+	// ボタン押下時にナビゲーションが閉じるように設定
+	$('.navinner a[href]').on('click', function(event) {
+		// クリックイベントが発生したら実行
+        $('#nav-toggle').trigger('click');
+    });
+	  // ロールオーバー
+	  $(".nav a img").rollover("_over");
+      // declare variable
+      var scrollTop = $(".scrollTop");
+      $(window).scroll(function() {
+        // declare variable
+        var topPos = $(this).scrollTop();
+        // if user scrolls down - show scroll to top button
+        if (topPos > 100) {
+          $(scrollTop).css("opacity", "1");
+        } else {
+          $(scrollTop).css("opacity", "0");
+        }
+      }); // scroll END
+      //Click event to scroll to top
+      $(scrollTop).click(function() {
+        $('html, body').animate({
+          scrollTop: 0
+        }, 800);
+        return false;
+      }); // click() scroll top EMD
+      $
+    }); // ready() END
+		
+    </script>
+
+</head>
+
+<body>
+<div id="all">
+  <header class="clearfix">
+    <div class="h1search_inner clearfix">
+      <div class="inner">
+        <h1><a href="index.html"><img src="img/logo_n.png" width="300" height="100" alt="WARSHIP"/></a></h1>
+      </div>
+      <div class="search">
+        <form id="form" method="get" action="http://www.google.co.jp/search" target="_blank">
+          <input type="text" id="formtext" class="fs" name="q" size="20" maxlength="50" value="" placeholder="Googleで検索">
+          <input type="submit" id="formsubmit" class="fsu" name="btng" value="検索">
+          <input type="hidden" name="hl" value="ja">
+        </form>
+      </div>
+    </div>
+    <div class="nav">
+      <nav class="clearfix">
+        <div id="nav-toggle"><!--nav-toggleセレクタで設定している-->
+          <span></span><!--右上のメニューボタン1本目-->
+          <span></span><!--右上のメニューボタン2本目-->
+          <span></span><!--右上のメニューボタン3本目-->
+        </div>
+        <div class="navinner">
+          <ul>
+            <li><a href="index.html"><img src="img/btn_home.png" width="175" height="100" alt="HOME"/></a></li>
+            <li><a href="ship.html"><img src="img/btn_ship.png" width="175" height="100" alt="RELATE SHIP"/></a></li>
+            <li><a href="plan.html"><img src="img/btn_plan.png" width="175" height="100" alt="RELATE PLAN"/></a></li>
+            <li><a href="boss.html"><img src="img/btn_boss.png" width="175" height="100" alt="RELATE BOSS"/></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="acco">
+      <p class="caution"> リンクはすべて外部サイトへ飛びます。</p>
+      <section class="box">
+        <h2>司令長官</h2>
+        <table border="1">
+          <tr class="header">
+            <th class="name">名前</th>
+            <th class="life">生誕 - 死没</th>
+            <th class="level">最終階級</th>
+            <th class="plan">出撃した作戦</th>
+          </tr>
+          <tr class="mainbody">
+            <th class="name"><a href="https://ja.wikipedia.org/?curid=1943271" target="new">山本五十六</a></th>
+            <td class="life">1884年4月4日<br> - 1943年4月18日<br><p>(59歳没)</p></td>
+            <td class="level">元帥<br>海軍大将</td>
+            <td class="plan">
+              <ul>
+                <li><a href="https://ja.wikipedia.org/?curid=725524" target="new">南方作戦(真珠湾攻撃)</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=27811" target="new">第二段作戦(ミッドウェー海戦)</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=174266" target="new">ガダルカナル島の戦い</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=77853" target="new">い号作戦</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=281159" target="new">海軍甲事件</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="mainbody">
+            <th class="name"><a href="https://ja.wikipedia.org/?curid=30756" target="new">南雲忠一</a></th>
+            <td class="life">1887年3月25日<br> - 1944年7月6日<p>(57歳没)</p></td>
+            <td class="level">海軍大将</td>
+            <td class="plan">
+              <ul>
+                <li><a href="https://ja.wikipedia.org/?curid=725524" target="new">南方作戦(真珠湾攻撃)</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=27811" target="new">第二段作戦(ミッドウェー海戦)</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="mainbody">
+            <th class="name"><a href="https://ja.wikipedia.org/?curid=721499" target="new">近藤信竹</a></th>
+            <td class="life">1886年9月25日<br> - 1953年2月19日<p>(66歳没)</p></td>
+            <td class="level">海軍大将</td>
+            <td class="plan">
+              <ul>
+                <li><a href="https://ja.wikipedia.org/?curid=725524" target="new">南方作戦(真珠湾攻撃)</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=27811" target="new">第二段作戦(ミッドウェー海戦)</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=71693" target="new">ガダルカナル島の戦い(第二次ソロモン海戦)</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=72367" target="new">ガダルカナル島の戦い(第三次ソロモン海戦)</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="mainbody">
+            <th class="name"><a href="https://ja.wikipedia.org/?curid=377738" target="new">伊藤整一</a></th>
+            <td class="life">1890年7月26日<br> - 1945年4月7日<p>(54歳没)</p></td>
+            <td class="level">海軍大将</td>
+            <td class="plan">
+              <ul>
+                <li><a href="https://ja.wikipedia.org/?curid=633825" target="new">坊ノ岬沖海戦</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="mainbody">
+            <th class="name"><a href="https://ja.wikipedia.org/?curid=725038" target="new">阿部弘毅</a></th>
+            <td class="life">1889年3月15日<br> - 1949年2月6日<p>(59歳没)</p></td>
+            <td class="level">海軍中将</td>
+            <td class="plan">
+              <ul>
+                <li><a href="https://ja.wikipedia.org/?curid=72367" target="new">ガダルカナル島の戦い(第三次ソロモン海戦)</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="mainbody">
+            <th class="name"><a href="https://ja.wikipedia.org/?curid=310689" target="new">三川軍一</a></th>
+            <td class="life">1888年8月29日<br> - 1981年2月25日<p>(92歳没)</p></td>
+            <td class="level">海軍中将</td>
+            <td class="plan">
+              <ul>
+                <li><a href="https://ja.wikipedia.org/?curid=725524" target="new">南方作戦(真珠湾攻撃)</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=238113" target="new">ジャワ沖海戦</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=72621" target="new">セイロン沖海戦</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=27811" target="new">第二段作戦(ミッドウェー海戦)</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=57599" target="new">ガダルカナル島の戦い(第一次ソロモン海戦)</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=72367" target="new">ガダルカナル島の戦い(第三次ソロモン海戦)</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="mainbody">
+            <th class="name"><a href="https://ja.wikipedia.org/?curid=558794" target="new">栗田健男</a></th>
+            <td class="life">1886年9月25日<br> - 1953年2月19日<p>(66歳没)</p></td>
+            <td class="level">海軍中将</td>
+            <td class="plan">
+              <ul>
+                <li><a href="https://ja.wikipedia.org/?curid=725524" target="new">南方作戦(マレー作戦)</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=199767" target="new">バタビア沖海戦</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=27811" target="new">第二段作戦(ミッドウェー海戦)</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=72597" target="new">ガダルカナル島の戦い(ヘンダーソン基地艦砲射撃)</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=57676" target="new">南太平洋海戦</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=203433" target="new">ガダルカナル島撤収作戦</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=219471" target="new">ろ号作戦</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=111894" target="new">レイテ沖海戦(捷一号作戦)</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="mainbody">
+            <th class="name"><a href="https://ja.wikipedia.org/?curid=80869" target="new">小沢治三郎</a></th>
+            <td class="life">1886年10月2日<br> - 1966年11月9日<p>(80歳没)</p></td>
+            <td class="level">海軍中将</td>
+            <td class="plan">
+              <ul>
+                <li><a href="https://ja.wikipedia.org/?curid=725524" target="new">南方作戦(マレー作戦)</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=77853" target="new">い号作戦</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=219471" target="new">ろ号作戦</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=71097" target="new">マリアナ沖海戦</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=71549" target="new">レイテ沖海戦</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="mainbody">
+            <th class="name"><a href="https://ja.wikipedia.org/?curid=1295484" target="new">三輪茂義</a></th>
+            <td class="life">1892年5月15日<br> - 1959年2月27日<p>(66歳没)</p></td>
+            <td class="level">海軍中将</td>
+            <td class="plan">
+              <ul>
+                <li><a href="https://ja.wikipedia.org/?curid=71549" target="new">レイテ沖海戦</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="mainbody">
+            <th class="name"><a href="https://ja.wikipedia.org/?curid=711017" target="new">志摩清英</a></th>
+            <td class="life">1890年2月25日<br> - 1973年11月7日<p>(83歳没)</p></td>
+            <td class="level">海軍中将</td>
+            <td class="plan">
+              <ul>
+                <li><a href="https://ja.wikipedia.org/?curid=71549" target="new">レイテ沖海戦</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="mainbody">
+            <th class="name"><a href="https://ja.wikipedia.org/?curid=852190" target="new">田中頼三</a></th>
+            <td class="life">1892年4月27日<br> - 1969年7月9日<p>(77歳没)</p></td>
+            <td class="level">海軍中将</td><li></li>
+            <td class="plan">
+              <ul>
+                <li><a href="https://ja.wikipedia.org/?curid=196858" target="new">スラバヤ沖海戦</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=27811" target="new">第二段作戦(ミッドウェー海戦)</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=71693" target="new">ガダルカナル島の戦い(第二次ソロモン海戦)</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=72597" target="new">ガダルカナル島の戦い(ヘンダーソン基地艦砲射撃)</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=57676" target="new">南太平洋海戦</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=72367" target="new">ガダルカナル島の戦い(第三次ソロモン海戦)</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="mainbody">
+            <th class="name"><a href="https://ja.wikipedia.org/?curid=78401" target="new">山口多聞</a></th>
+            <td class="life">1892年8月17日<br> - 1942年6月5日<p>(49歳没)</p></td>
+            <td class="level">海軍中将</td>
+            <td class="plan">
+              <ul>
+                <li><a href="https://ja.wikipedia.org/?curid=725524" target="new">南方作戦(真珠湾攻撃)</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=27811" target="new">第二段作戦(ミッドウェー海戦)</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="mainbody">
+            <th class="name"><a href="https://ja.wikipedia.org/?curid=943050" target="new">西村祥治</a></th>
+            <td class="life">1889年11月30日<br> - 1944年10月25日<p>(54歳没)</p></td>
+            <td class="level">海軍中将</td>
+            <td class="plan">
+              <ul>
+                <li><a href="https://ja.wikipedia.org/?curid=27811" target="new">第二段作戦(ミッドウェー海戦)</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=71693" target="new">ガダルカナル島の戦い(第二次ソロモン海戦)</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=57676" target="new">南太平洋海戦</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=72597" target="new">ガダルカナル島の戦い(ヘンダーソン基地艦砲射撃)</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=1340109" target="new">ニュージョージア島の戦い</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=111894" target="new">レイテ沖海戦(捷一号作戦)</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=71549" target="new">レイテ沖海戦(スリガオ海峡海戦)</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="mainbody">
+            <th class="name"><a href="https://ja.wikipedia.org/?curid=909015" target="new">古村啓蔵</a></th>
+            <td class="life">1896年7月20日<br> - 1978年2月7日<p>(81歳没)</p></td>
+            <td class="level">海軍少将</td>
+            <td class="plan">
+              <ul>
+                <li><a href="https://ja.wikipedia.org/?curid=725524" target="new">南方作戦(真珠湾攻撃)</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=27811" target="new">第二段作戦(ミッドウェー海戦)</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=57676" target="new">南太平洋海戦</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=71097" target="new">マリアナ沖海戦</a></li>
+                <li><a href="https://ja.wikipedia.org/?curid=647553" target="new">坊ノ岬沖海戦(天一号作戦)</a></li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </section>
+    </div>
+    <div id="stop" class="scrollTop">
+  		<a href="">Top</a>
+    </div>
+  </main>
+  <footer>
+    <div class="inner">
+      <ul class="link">
+        <li><a href="index.html">home</a></li>
+        <li><a href="ship.html">Relate Ship</a></li>
+        <li><a href="plan.html">Relate Plan</a></li>
+        <li><a href="boss.html">Relate Boss</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

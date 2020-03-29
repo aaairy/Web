@@ -1,0 +1,68 @@
+@charset "utf-8";
+table {
+	margin-top: 1%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 3%;
+	width: 90%;
+}
+table th {
+    background-color: #b4d1d7;
+    width: 30%;
+}
+.box .ireko {
+    margin-top: 0;
+    margin-right: 0px;
+    margin-bottom: 0;
+    width: 100%;
+    margin-left: 0px;
+}
+.acco .box a {
+	text-decoration: none;
+	color: #7c0606;
+}
+.acco .box a:hover {
+	color: #7c0606;
+	text-decoration: underline;
+}
+.box .clickover .list a {
+  color: #2f2f2f;
+  text-decoration: none;
+}
+.box .clickover .list a:hover {
+  text-decoration: underline;
+  color: #7c0606;
+}
+.click table .gmap {
+  height: 0px;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.click table .gmap iframe {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+ 
+@media screen and (max-width:875px){
+  .last td:last-child {
+    border-bottom: solid 1px #ccc;
+    width: 100%;
+  }
+.box th,
+.box td {
+    padding-top:1.5%;
+    padding-bottom:1.5%;
+　　border-bottom: none;
+    display: block;
+    width: 99%;
+  }
+  .box .ireko{
+    width:80%;
+    margin :0 auto;
+    text-align: center;
+  }
+}
